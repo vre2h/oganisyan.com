@@ -1,8 +1,20 @@
 start:
-	npm run develop
+	npx gatsby develop
 
-deploy:
-	npm run deploy
+deploy: clean lint format build
+	npx gh-pages -d public
 
 build:
-	npm run build
+	npx gatsby build
+
+format:
+	npx prettier --write src/**/*.{js,jsx,json,md}
+
+clean:
+	npx gatsby clean
+
+serve:
+	npx gatsby serve
+
+lint:
+	npx eslint src/
