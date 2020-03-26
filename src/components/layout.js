@@ -1,55 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 
-const Layout = ({ location, title, children }) => {
-  // eslint-disable-next-line
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+import Nav from './nav'
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: 'none',
-            textDecoration: 'none',
-            color: 'inherit',
-          }}
-          to="/"
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: 'Montserrat, sans-serif',
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: 'none',
-            textDecoration: 'none',
-            color: 'inherit',
-          }}
-          to="/"
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+const Layout = ({ title, children }) => {
   return (
     <div
       style={{
@@ -59,7 +15,26 @@ const Layout = ({ location, title, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}</header>
+      <header>
+        <h3
+          style={{
+            fontFamily: 'Montserrat, sans-serif',
+            marginTop: 0,
+          }}
+        >
+          <Link
+            style={{
+              boxShadow: 'none',
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+            to="/"
+          >
+            {title}
+          </Link>
+        </h3>
+        <Nav />
+      </header>
       <main>{children}</main>
       <footer style={{ textAlign: 'center' }}>
         Made on planet earth. <br />
