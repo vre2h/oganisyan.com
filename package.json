@@ -8,8 +8,10 @@
     "url": "https://github.com/vre2h/oganisyan.com/issues"
   },
   "dependencies": {
+    "astroturf": "^0.10.2",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
+    "gatsby-plugin-astroturf": "^0.2.1",
     "gatsby-plugin-feed": "^2.3.29",
     "gatsby-plugin-google-analytics": "^2.1.38",
     "gatsby-plugin-manifest": "^2.2.48",

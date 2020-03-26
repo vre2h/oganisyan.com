@@ -1,49 +1,37 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import { rhythm } from '../utils/typography'
+import NavLink from './navlink'
 
 const urls = [
   {
-    link: '/',
-    text: 'Blog',
+    url: '/',
+    title: 'Blog',
   },
   {
-    link: '/',
-    text: 'About',
+    url: '/',
+    title: 'About',
   },
   {
-    link: '/',
-    text: 'Portfolio',
+    url: '/',
+    title: 'Portfolio',
   },
   {
-    link: '/',
-    text: 'Testimonials',
+    url: '/',
+    title: 'Testimonials',
   },
 ]
 
-export default () => {
-  const linkStyles = {
-    boxShadow: 'none',
-    textDecoration: 'none',
-    margin: '7px',
-    color: '#0060a0',
-    borderBottom: '1px solid rgba(0,96,160,0.15)',
-  }
-
-  return (
-    <nav
-      style={{
-        display: 'flex',
-        marginBottom: rhythm(1),
-        fontSize: rhythm(0.5),
-      }}
-    >
-      {urls.map(({ link, text }) => (
-        <Link style={linkStyles} to={link}>
-          {text}
-        </Link>
-      ))}
-    </nav>
-  )
-}
+export default () => (
+  <nav
+    style={{
+      display: 'flex',
+      marginBottom: rhythm(1),
+      fontSize: rhythm(0.5),
+    }}
+  >
+    {urls.map(({ url, title }) => (
+      <NavLink href={url} title={title} />
+    ))}
+  </nav>
+)

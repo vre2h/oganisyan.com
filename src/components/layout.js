@@ -15,11 +15,20 @@ const Layout = ({ title, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>
+      <header
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'baseline',
+          flexWrap: 'wrap',
+        }}
+      >
         <h3
           style={{
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
+            marginBottom: rhythm(0.3),
+            minWidth: '50%',
           }}
         >
           <Link

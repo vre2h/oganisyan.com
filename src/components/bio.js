@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import { rhythm } from '../utils/typography'
+import NavLink from './navlink'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -40,7 +41,6 @@ const Bio = () => {
     <div
       style={{
         display: 'flex',
-        marginBottom: rhythm(2.5),
       }}
     >
       <Image
@@ -57,9 +57,13 @@ const Bio = () => {
           borderRadius: '50%',
         }}
       />
-      <p>
+      <p style={{ marginBottom: 0 }}>
         Personal blog by{' '}
-        <a href={`https://twitter.com/${social.twitter}`}>{author.name}</a>
+        <NavLink
+          href={`https://twitter.com/${social.twitter}`}
+          title={author.name}
+          absolute
+        />
         <br />
         {author.summary}
       </p>

@@ -50,6 +50,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-astroturf',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
