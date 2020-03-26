@@ -4,6 +4,7 @@ import { css } from 'astroturf'
 import { Link } from 'gatsby'
 
 const linkColor = '#0060a0'
+const hoverColor = '#b03000'
 
 const styles = css`
   .link {
@@ -12,6 +13,7 @@ const styles = css`
     color: ${linkColor};
 
     box-shadow: none;
+    border-bottom: 1px solid ${linkColor};
 
     transition: all 0.3s;
   }
@@ -21,7 +23,8 @@ const styles = css`
   }
 
   .link:hover {
-    box-shadow: 0 1px 0 0 ${linkColor};
+    color: ${hoverColor};
+    border-bottom-color: ${hoverColor};
   }
 `
 

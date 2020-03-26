@@ -27,7 +27,7 @@ export default () => (
     style={{
       display: 'flex',
       marginBottom: rhythm(1),
-      fontSize: rhythm(0.5),
+      fontSize: rhythm(0.6),
     }}
   >
     {urls.map(({ url, title }) => (
