@@ -1,7 +1,7 @@
 start:
 	npx gatsby develop
 
-deploy: clean lint format build
+deploy: lint format build
 	npx gh-pages -d public
 
 build:
