@@ -26,8 +26,7 @@ export default () => (
   <nav
     style={{
       display: 'flex',
-      marginBottom: rhythm(1),
-      fontSize: rhythm(0.6),
+      fontSize: rhythm(0.55),
     }}
   >
     {urls.map(({ url, title }) => (

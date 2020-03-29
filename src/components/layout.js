@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
 import Nav from './nav'
+import { mainIcon } from './icons'
 
 const Layout = ({ title, children }) => (
   <div
@@ -17,24 +18,38 @@ const Layout = ({ title, children }) => (
     <header
       style={{
         display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'baseline',
         flexWrap: 'wrap',
+        alignItems: 'baseline',
+        justifyContent: 'space-between',
+        marginBottom: rhythm(1.5),
       }}
     >
       <h3
         style={{
+          position: 'relative',
           fontFamily: 'Montserrat, sans-serif',
           marginTop: 0,
-          marginBottom: rhythm(0.3),
-          marginRight: rhythm(0.5),
+          minWidth: '50%',
         }}
       >
+        <div
+          style={{
+            width: '80px',
+            height: '80px',
+            position: 'absolute',
+            left: '-15px',
+            top: '-25px',
+            zIndex: '-1',
+          }}
+        >
+          {mainIcon}
+        </div>
         <Link
           style={{
             boxShadow: 'none',
             textDecoration: 'none',
             color: 'inherit',
+            marginLeft: 15,
           }}
           to="/"
         >
@@ -47,9 +62,9 @@ const Layout = ({ title, children }) => (
     <footer
       style={{
         textAlign: 'center',
-        marginTop: rhythm(2.5),
+        marginTop: rhythm(3),
         color: '#a0a0a0',
-        fontSize: rhythm(0.5),
+        fontSize: rhythm(0.4),
       }}
     >
       Made on planet earth. <br />
