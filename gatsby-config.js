@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Oganisyan Vrezh',
     author: {
-      name: 'Vrezh Oganisyan',
+      name: 'Oganisyan Vrezh',
       summary: '21 y.o. developer from Armenia.',
     },
     description: 'A little bit about me.',
