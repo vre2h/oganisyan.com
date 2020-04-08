@@ -8,6 +8,7 @@
   "rules": {
     "semi": "off",
     "object-curly-newline": "off",
+    "no-use-before-define": "warn",
 
     "react/jsx-filename-extension": "off",
     "react/jsx-one-expression-per-line": "off",

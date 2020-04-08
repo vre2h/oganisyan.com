@@ -1,0 +1,35 @@
+i {
+  margin: 0.3em;
+  cursor: pointer;
+  transition: color 300ms ease, margin-top 300ms ease;
+  transform: translateZ(0);
+}
+
+#twitter:hover i {
+  color: #77ddf6;
+}
+
+#telegram:hover i {
+  color: #47a0b6;
+}
+
+#github:hover i {
+  color: black;
+}
+
+#linkedin:hover i,
+#fb:hover i {
+  color: #0177b5;
+}
+
+#code:hover i {
+  color: #29a329;
+}
+
+#stack:hover i {
+  color: #ed780e;
+}
+
+#mail:hover i {
+  color: #f7b401;
+}

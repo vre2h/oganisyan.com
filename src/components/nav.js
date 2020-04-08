@@ -30,7 +30,7 @@ export default () => (
     }}
   >
     {urls.map(({ url, title }) => (
-      <NavLink href={url} title={title} />
+      <NavLink href={url} title={title} key={title} />
     ))}
   </nav>
 )

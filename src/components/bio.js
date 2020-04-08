@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import avatar from '../../content/assets/profile-pic.jpg'
 
 import { rhythm } from '../utils/typography'
+import Social from './social'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -33,22 +34,33 @@ const Bio = () => {
     <div
       style={{
         display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'column',
         marginBottom: rhythm(1),
-        alignItems: 'center',
       }}
     >
-      <img
-        src={avatar}
-        alt={author.name}
+      <div
         style={{
-          width: rhythm(2.5),
-          height: rhythm(2.5),
-          borderRadius: '50%',
-          margin: 0,
-          marginRight: '20px',
+          display: 'flex',
+          alignItems: 'center',
         }}
-      />
-      <p style={{ marginBottom: 0 }}>{author.summary}</p>
+      >
+        <img
+          src={avatar}
+          alt={author.name}
+          style={{
+            width: rhythm(2.5),
+            height: rhythm(2.5),
+            borderRadius: '50%',
+            margin: 0,
+            marginRight: '20px',
+          }}
+        />
+        <p style={{ marginBottom: 0 }}>{author.summary}</p>
+      </div>
+      <div style={{ alignSelf: 'flex-end' }}>
+        <Social />
+      </div>
     </div>
   )
 }
