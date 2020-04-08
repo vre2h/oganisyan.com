@@ -9,7 +9,7 @@ const urls = [
     title: 'Blog',
   },
   {
-    url: '/',
+    url: '/about',
     title: 'About',
   },
   {

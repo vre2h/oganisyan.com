@@ -1,10 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
+import avatar from '../../content/assets/profile-pic.jpg'
 
 import { rhythm } from '../utils/typography'
-
-import NavLink from './navlink'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -30,38 +28,27 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
         display: 'flex',
         marginBottom: rhythm(1),
+        alignItems: 'center',
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
+      <img
+        src={avatar}
         alt={author.name}
         style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          width: 60,
-          height: 60,
-          borderRadius: '100%',
-        }}
-        imgStyle={{
+          width: rhythm(2.5),
+          height: rhythm(2.5),
           borderRadius: '50%',
+          margin: 0,
+          marginRight: '20px',
         }}
       />
-      <p style={{ marginBottom: 0 }}>
-        Hey, I am{' '}
-        <NavLink
-          href={`https://twitter.com/${social.twitter}`}
-          title={author.name}
-          absolute
-        />
-        <br />
-        {author.summary}
-      </p>
+      <p style={{ marginBottom: 0 }}>{author.summary}</p>
     </div>
   )
 }

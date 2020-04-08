@@ -30,17 +30,17 @@ const styles = css`
   }
 `
 
-export default ({ href, title, absolute }) => {
+export default ({ href, title, absolute, style }) => {
   if (absolute) {
     return (
-      <a className={styles.link} href={href}>
+      <a className={styles.link} href={href} style={style}>
         {title}
       </a>
     )
   }
 
   return (
-    <Link className={styles.link} to={href}>
+    <Link className={styles.link} to={href} style={style}>
       {title}
     </Link>
   )

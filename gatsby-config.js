@@ -3,7 +3,8 @@ module.exports = {
     title: 'Oganisyan Vrezh',
     author: {
       name: 'Oganisyan Vrezh',
-      summary: '21 y.o. developer from Armenia.',
+      summary:
+        'Software Engineer with a keen interest in design, management and education.',
     },
     description: 'A little bit about me.',
     siteUrl: 'https://oganisyan.com/',
