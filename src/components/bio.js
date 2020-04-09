@@ -1,7 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import avatar from '../../content/assets/profile-pic.jpg'
 
+import useWindowSize from '../hooks/useWindowSize'
+import avatar from '../../content/assets/profile-pic.jpg'
 import { rhythm } from '../utils/typography'
 import Social from './social'
 
@@ -30,6 +31,8 @@ const Bio = () => {
   `)
 
   const { author } = data.site.siteMetadata
+  const { width } = useWindowSize()
+
   return (
     <div
       style={{
@@ -58,7 +61,7 @@ const Bio = () => {
         />
         <p style={{ marginBottom: 0 }}>{author.summary}</p>
       </div>
-      <div style={{ alignSelf: 'flex-end' }}>
+      <div style={Number(width) > 450 ? { alignSelf: 'flex-end' } : {}}>
         <Social />
       </div>
     </div>
