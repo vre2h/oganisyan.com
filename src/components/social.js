@@ -11,11 +11,11 @@ const styles = css`
     color: inherit;
     box-shadow: none;
 
-    transition: margin 300ms ease;
+    transition: transform 300ms ease;
   }
 
   .link:hover {
-    margin-top: -5px;
+    transform: translateY(-5px);
   }
 `
 
@@ -26,7 +26,7 @@ export default () => (
       textAlign: 'center',
       fontSize: `${rhythm(1.3)}`,
       color: '#555',
-      overflow: 'hidden',
+      overflow: 'auto',
     }}
   >
     <a id="twitter" className={styles.link} href="https://twitter.com/vre2h">
