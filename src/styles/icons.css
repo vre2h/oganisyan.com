@@ -2,7 +2,6 @@ i {
   margin: 0.3em;
   cursor: pointer;
   transition: color 300ms ease, margin-top 300ms ease;
-  transform: translateZ(0);
 }
 
 #twitter:hover i {
