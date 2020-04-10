@@ -1,0 +1,18 @@
+.activity-wrapper {
+  width: 50%;
+}
+
+.about-image {
+  float: right;
+  margin: 0;
+}
+
+@media screen and (max-width: 660px) {
+  .about-image {
+    float: none;
+  }
+
+  .activity-wrapper {
+    width: 100%;
+  }
+}

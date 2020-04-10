@@ -10,11 +10,7 @@ const urls = [
   },
   {
     url: '/about',
-    title: 'About',
-  },
-  {
-    url: '/',
-    title: 'Portfolio',
+    title: 'About (CV)',
   },
   {
     url: '/',

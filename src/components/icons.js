@@ -15,5 +15,13 @@ const mainIcon = (
   </svg>
 )
 
-// eslint-disable-next-line
-export { mainIcon }
+const infoIcon = (
+  <i
+    className="fa fa-info-circle"
+    style={{
+      color: 'hsl(44, 91%, 72%)',
+    }}
+  />
+)
+
+export { mainIcon, infoIcon }
