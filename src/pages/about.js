@@ -63,7 +63,7 @@ export default ({ data, location }) => {
           }}
         >
           <figure className="about-image">
-            <img src={aboutPhoto} alt="" height="340" />
+            <img src={aboutPhoto} alt="" height="300" />
           </figure>
           <p>
             I’m Vrezh, Software Engineer and Lecturer with a keen interest in
