@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+.about-image img {
+  margin: 0;
+}
+
 @media screen and (max-width: 660px) {
   .about-image {
     float: none;
