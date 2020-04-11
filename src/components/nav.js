@@ -9,11 +9,11 @@ const urls = [
     title: 'Blog',
   },
   {
-    url: '/about',
-    title: 'About (CV)',
+    url: '/about/',
+    title: 'About (cv)',
   },
   {
-    url: '/',
+    url: '/testimonials/',
     title: 'Testimonials',
   },
 ]

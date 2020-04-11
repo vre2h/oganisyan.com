@@ -1,0 +1,15 @@
+.social .link {
+  margin: 0;
+
+  text-decoration: none;
+  color: inherit;
+  box-shadow: none;
+  border: none;
+
+  transition: transform 300ms ease;
+}
+
+.social .link:hover {
+  transform: translateY(-5px);
+  border: none;
+}

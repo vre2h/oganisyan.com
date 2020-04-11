@@ -54,8 +54,8 @@ export default ({ data, location }) => {
         <h1 style={{ margin: `${rhythm(1 / 2)}`, marginLeft: 0 }}>About me</h1>
         <Social />
       </Flex>
-      <main style={{ marginTop: rhythm(1.5) }}>
-        <h3>Ahoy!</h3>
+      <main style={{ marginTop: rhythm(1) }}>
+        <h3 style={{ marginTop: rhythm(1) }}>Ahoy!</h3>
 
         <div
           style={{

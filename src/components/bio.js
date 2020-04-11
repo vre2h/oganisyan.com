@@ -41,6 +41,7 @@ const Bio = () => {
         flexDirection: 'column',
         marginBottom: rhythm(1),
       }}
+      className="bio"
     >
       <div
         style={{
@@ -58,6 +59,7 @@ const Bio = () => {
             margin: 0,
             marginRight: '20px',
           }}
+          className="image"
         />
         <p style={{ marginBottom: 0 }}>{author.summary}</p>
       </div>

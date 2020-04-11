@@ -4,4 +4,4 @@ import 'typeface-merriweather'
 
 import 'prismjs/themes/prism.css'
 
-import './src/styles/icons.css'
+import './src/styles/index.css'

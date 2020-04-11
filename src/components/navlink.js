@@ -1,46 +1,24 @@
 import React from 'react'
-import { css } from 'astroturf'
-
 import { Link } from 'gatsby'
 
-const linkColor = '#0060a0'
-const hoverColor = '#f9d679'
-const borderColor = 'rgba(0, 96, 160, 0.2)'
-const hoverBorderColor = 'rgba(249, 214,121, 0.5)'
-
-const styles = css`
-  .link {
-    margin: 7px;
-
-    color: ${linkColor};
-
-    box-shadow: none;
-    border-bottom: 1px solid ${borderColor};
-
-    transition: all 0.2s;
-  }
-
-  .link:first-child {
-    margin-left: 0;
-  }
-
-  .link:hover {
-    color: ${hoverColor};
-    border-bottom-color: ${hoverBorderColor};
-  }
-`
+import './styles/navlink.css'
 
 export default ({ href, title, absolute, style }) => {
   if (absolute) {
     return (
-      <a className={styles.link} href={href} style={style}>
+      <a className="link" href={href} style={style}>
         {title}
       </a>
     )
   }
 
   return (
-    <Link className={styles.link} to={href} style={style}>
+    <Link
+      activeClassName="active-link"
+      className="link"
+      to={href}
+      style={style}
+    >
       {title}
     </Link>
   )
