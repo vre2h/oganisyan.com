@@ -1,8 +1,6 @@
 import Typography from 'typography'
 import Wordpress2016 from 'typography-theme-wordpress-2016'
 
-import '../styles/fonts.css'
-
 Wordpress2016.overrideThemeStyles = ({ rhythm }) => ({
   a: {
     color: 'var(--link-color)',
