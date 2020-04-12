@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import { rhythm } from '../utils/typography'
-import NavLink from './navlink'
 
 const urls = [
   {
@@ -26,7 +26,9 @@ export default () => (
     }}
   >
     {urls.map(({ url, title }) => (
-      <NavLink href={url} title={title} key={title} />
+      <Link style={{ margin: 7 }} to={url} key={title}>
+        {title}
+      </Link>
     ))}
   </nav>
 )

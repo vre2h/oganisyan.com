@@ -2,8 +2,6 @@ import React from 'react'
 
 import { rhythm } from '../utils/typography'
 
-import './styles/social.css'
-
 export default () => (
   <div
     style={{

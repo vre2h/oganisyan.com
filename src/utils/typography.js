@@ -1,9 +1,28 @@
 import Typography from 'typography'
 import Wordpress2016 from 'typography-theme-wordpress-2016'
 
-Wordpress2016.overrideThemeStyles = () => ({
+import '../styles/fonts.css'
+
+Wordpress2016.overrideThemeStyles = ({ rhythm }) => ({
+  a: {
+    color: 'var(--link-color)',
+    borderBottom: '1px solid var(--border-color)',
+    boxShadow: 'none',
+    transition: 'all 0.2s',
+  },
+  'a:hover': {
+    color: 'var(--hover-color)',
+    borderBottomColor: 'var(--hover-border-color)',
+  },
+  '.active-link': {
+    color: 'var(--hover-color)',
+    borderBottomColor: 'var(--hover-border-color)',
+  },
   'a.gatsby-resp-image-link': {
     boxShadow: 'none',
+  },
+  'p code': {
+    fontSize: rhythm(0.55),
   },
 })
 

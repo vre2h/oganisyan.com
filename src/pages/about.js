@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -7,10 +7,7 @@ import Social from '../components/social'
 import Flex from '../components/Flex'
 import { rhythm } from '../utils/typography'
 import aboutPhoto from '../../content/assets/about-photo.jpg'
-import NavLink from '../components/navlink'
 import { infoIcon } from '../components/icons'
-
-import './styles/about.css'
 
 const Activity = ({ activities, title: activityTitle }) => (
   <section className="activity-wrapper">
@@ -18,7 +15,7 @@ const Activity = ({ activities, title: activityTitle }) => (
     {activities.map(({ title, site, period, roles, stack }) => (
       <section style={{ marginBottom: rhythm(1.5) }}>
         <h3 style={{ margin: 0, lineHeight: 1.4 }}>
-          <NavLink title={title} href={site} absolute />
+          <a href={site}>{title}</a>
         </h3>
         <small style={{ color: '#a0a0a0', fontSize: rhythm(0.45) }}>
           {period}
@@ -70,12 +67,9 @@ export default ({ data, location }) => {
             design, management and education.
             <small>
               {infoIcon}
-              <NavLink
-                title="cv"
-                absolute
-                href="https://cutt.ly/oganisyan-cv"
-                style={{ margin: 0 }}
-              />
+              <a href="https://cutt.ly/oganisyan-cv" style={{ margin: 0 }}>
+                cv
+              </a>
             </small>
           </p>
           <p>
@@ -84,12 +78,9 @@ export default ({ data, location }) => {
             and scalable applications.
             <small>
               {infoIcon}
-              <NavLink
-                title="Github"
-                absolute
-                href="https://github.com/vre2h"
-                style={{ margin: 0 }}
-              />
+              <a href="https://github.com/vre2h" style={{ margin: 0 }}>
+                Github
+              </a>
             </small>
           </p>
           <p>
@@ -111,7 +102,7 @@ export default ({ data, location }) => {
           </span>
           <p>
             You can find reviews from my clients, tutors and students in the{' '}
-            <NavLink href="/testimonials" title="Testimonials section." />
+            <Link to="/testimonials">Testimonials section.</Link>
           </p>
         </Flex>
         <Flex flexDirection="row" justifyContent="space-between">

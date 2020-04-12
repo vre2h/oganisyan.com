@@ -5,8 +5,6 @@ import avatar from '../../content/assets/profile-pic.jpg'
 import { rhythm } from '../utils/typography'
 import Social from './social'
 
-import './styles/bio.css'
-
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {

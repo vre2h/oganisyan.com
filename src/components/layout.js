@@ -50,6 +50,7 @@ const Layout = ({ title, children }) => (
             textDecoration: 'none',
             color: 'inherit',
             marginLeft: 15,
+            borderBottom: 'none',
           }}
           to="/"
         >

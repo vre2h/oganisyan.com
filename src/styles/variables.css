@@ -1,7 +1,10 @@
 body {
   --main-color: #f9d679;
+
   --link-color: #0060a0;
-  --hover-color: #f9d679;
+
   --border-color: rgba(0, 96, 160, 0.2);
+
+  --hover-color: #f9d679;
   --hover-border-color: rgba(249, 214, 121, 0.5);
 }
