@@ -19,9 +19,18 @@ const infoIcon = (
   <i
     className="fa fa-info-circle"
     style={{
-      color: 'hsl(44, 91%, 72%)',
+      color: 'var(--main-color)',
     }}
   />
 )
 
-export { mainIcon, infoIcon }
+const quoteIcon = (
+  <i
+    className="fa fa-quote-left"
+    style={{
+      color: 'var(--main-color)',
+    }}
+  />
+)
+
+export { mainIcon, infoIcon, quoteIcon }

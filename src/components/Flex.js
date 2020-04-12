@@ -6,6 +6,7 @@ export default ({
   alignItems = 'flex-start',
   flexWrap = 'wrap',
   flexDirection = 'row',
+  style,
 } = {}) => (
   <div
     style={{
@@ -14,6 +15,7 @@ export default ({
       alignItems,
       flexWrap,
       flexDirection,
+      ...style,
     }}
   >
     {children}
