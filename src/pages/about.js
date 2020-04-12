@@ -15,7 +15,9 @@ const Activity = ({ activities, title: activityTitle }) => (
     {activities.map(({ title, site, period, roles, stack }) => (
       <section style={{ marginBottom: rhythm(1.5) }}>
         <h3 style={{ margin: 0, lineHeight: 1.4 }}>
-          <a href={site}>{title}</a>
+          <a target="_blank" rel="noopener noreferrer" href={site}>
+            {title}
+          </a>
         </h3>
         <small style={{ color: '#a0a0a0', fontSize: rhythm(0.45) }}>
           {period}
@@ -67,7 +69,12 @@ export default ({ data, location }) => {
             design, management and education.
             <small>
               {infoIcon}
-              <a href="https://cutt.ly/oganisyan-cv" style={{ margin: 0 }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://cutt.ly/oganisyan-cv"
+                style={{ margin: 0 }}
+              >
                 cv
               </a>
             </small>
@@ -78,7 +85,12 @@ export default ({ data, location }) => {
             and scalable applications.
             <small>
               {infoIcon}
-              <a href="https://github.com/vre2h" style={{ margin: 0 }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/vre2h"
+                style={{ margin: 0 }}
+              >
                 Github
               </a>
             </small>
