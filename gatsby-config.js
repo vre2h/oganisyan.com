@@ -48,14 +48,14 @@ module.exports = {
     education: [
       {
         title: 'Moscow State University',
-        site: 'https://msu.am',
+        site: 'http://msu.am',
         period: 'September 2015 - July 2019',
         roles: 'Bachelor',
         stack: 'Computer Science',
       },
       {
         title: 'Russian-Armenian University',
-        site: 'https://www.rau.am/',
+        site: 'http://rau.am/eng',
         period: 'September 2019 - June 2021',
         roles: 'Master',
         stack: 'Psychology and Human Behaviour',
