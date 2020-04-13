@@ -71,8 +71,8 @@ module.exports = {
       excepteur amet anim labore dolore do esse.`,
       },
       {
-        author: 'Tsiala Oganesyan',
-        position: 'NERVER UTOX at VREZH',
+        author: 'Pavel Durov',
+        position: 'Ceo and Founder at Telegram',
         text: `Mollit duis voluptate ad consequat pariatur culpa nostrud culpa
         deserunt aliqua reprehenderit officia duis. Qui sint aliqua ipsum
         veniam et officia aliqua sunt. Dolore aliqua excepteur sint qui magna
