@@ -9,9 +9,16 @@ import Bio from '../components/bio'
 import { QuoteIcon } from '../components/icons'
 
 const ReviewCard = ({ author, text, position }) => (
-  <>
+  <section style={{ marginBottom: rhythm(1.5) }}>
     <p style={{ marginBottom: 0 }}>
-      <QuoteIcon width="40" style={{ fill: 'var(--main-color)' }} />
+      <QuoteIcon
+        width="40"
+        style={{
+          fill: 'var(--main-color)',
+          marginRight: 10,
+          cursor: 'pointer',
+        }}
+      />
       {text}
     </p>
     <Flex justifyContent="flex-end" alignItems="center">
@@ -19,7 +26,7 @@ const ReviewCard = ({ author, text, position }) => (
         — {author}, {position}
       </div>
     </Flex>
-  </>
+  </section>
 )
 
 export default ({ data, location }) => {
