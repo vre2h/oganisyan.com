@@ -96,20 +96,6 @@ const Layout = ({ title, children }) => (
           (Dimension C137)
         </div>
       </Flex>
-      <div
-        style={{ marginTop: rhythm(1), fontSize: rhythm(0.4), color: '#ccc' }}
-      >
-        Little Prince by{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.instagram.com/tsia.la/"
-          title="Tsiala"
-        >
-          Tsiala
-        </a>{' '}
-        😍
-      </div>
       <div style={{ fontSize: rhythm(0.4), color: '#ccc' }}>
         Icons made by{' '}
         <a
