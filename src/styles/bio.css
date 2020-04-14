@@ -1,9 +1,23 @@
-@media screen and (min-width: 450px) {
-  .bio .social-wrapper {
-    align-self: flex-end;
-  }
+.bio-image {
+  margin: 0;
+  margin-right: 20px;
+  padding: 2px;
+
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: all 300ms;
 }
 
 .bio-image:hover {
   border-color: #c47;
+}
+
+@media screen and (min-width: 450px) {
+  .bio .social-wrapper {
+    align-self: flex-end;
+  }
 }
