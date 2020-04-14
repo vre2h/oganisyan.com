@@ -5,10 +5,6 @@ import { rhythm } from '../utils/typography'
 
 const urls = [
   {
-    url: '/',
-    title: 'Blog',
-  },
-  {
     url: '/about/',
     title: 'About (cv)',
   },
@@ -29,6 +25,19 @@ export default () => (
       fontSize: rhythm(0.55),
     }}
   >
+    <Link
+      getProps={({ location: { pathname } }) => {
+        if (pathname === '/' || pathname.includes('/blog')) {
+          return { className: 'active-link' }
+        }
+
+        return {}
+      }}
+      style={{ margin: 7 }}
+      to="/"
+    >
+      Blog
+    </Link>
     {urls.map(({ url, title }) => (
       <Link
         activeClassName="active-link"
