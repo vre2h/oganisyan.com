@@ -16,6 +16,10 @@ const urls = [
     url: '/testimonials/',
     title: 'Testimonials',
   },
+  {
+    url: '/bookshelf',
+    title: 'Bookshelf',
+  },
 ]
 
 export default () => (

@@ -54,7 +54,7 @@ const Bio = () => {
             margin: 0,
             marginRight: '20px',
             padding: 2,
-            border: '2px solid #c62d8f',
+            border: '2px solid var(--main-color)',
             cursor: 'pointer',
             outline: 'none',
           }}
