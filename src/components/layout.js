@@ -87,26 +87,44 @@ const Layout = ({ title, children }) => (
       }}
     >
       <Flex flexDirection="row" justifyContent="center" alignItems="center">
-        <PlanetEarth width="50" style={{ cursor: 'pointer' }} />
+        <PlanetEarth
+          width="50"
+          style={{ cursor: 'pointer', fontSize: rhythm(0.6) }}
+        />
         <div style={{ marginLeft: 5 }}>
           Made on planet earth. <br />
           (Dimension C137)
         </div>
       </Flex>
-      <div color="#ccc" style={{ marginTop: rhythm(1) }}>
+      <div color="#ccc" style={{ marginTop: rhythm(1), fontSize: rhythm(0.4) }}>
         Little Prince by{' '}
-        <a href="https://www.instagram.com/tsia.la/" title="Tsiala">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/tsia.la/"
+          title="Tsiala"
+        >
           Tsiala
         </a>{' '}
         😍
       </div>
-      <div color="#ccc">
+      <div color="#ccc" style={{ fontSize: rhythm(0.4) }}>
         Icons made by{' '}
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.flaticon.com/authors/freepik"
+          title="Freepik"
+        >
           Freepik
         </a>{' '}
         from{' '}
-        <a href="https://www.flaticon.com/" title="Flaticon">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.flaticon.com/"
+          title="Flaticon"
+        >
           www.flaticon.com
         </a>
       </div>
