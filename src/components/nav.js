@@ -33,7 +33,7 @@ export default () => (
 
         return {}
       }}
-      style={{ margin: 7 }}
+      style={{ margin: 7, marginLeft: 0 }}
       to="/"
     >
       Blog
