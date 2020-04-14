@@ -13,7 +13,7 @@ const Activity = ({ activities, title: activityTitle }) => (
   <section className="activity-wrapper">
     <h4 style={{ marginTop: rhythm(1) }}>{activityTitle}</h4>
     {activities.map(({ title, site, period, roles, stack }) => (
-      <section style={{ marginBottom: rhythm(1.5) }}>
+      <section key={title} style={{ marginBottom: rhythm(1.5) }}>
         <h3 style={{ margin: 0, lineHeight: 1.4 }}>
           <a target="_blank" rel="noopener noreferrer" href={site}>
             {title}

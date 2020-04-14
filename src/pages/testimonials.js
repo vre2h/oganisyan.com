@@ -37,7 +37,12 @@ export default ({ data, location }) => {
       </Flex>
       <main style={{ marginTop: rhythm(1) }}>
         {testimonials.map(({ author, text, position }) => (
-          <ReviewCard author={author} text={text} position={position} />
+          <ReviewCard
+            key={author}
+            author={author}
+            text={text}
+            position={position}
+          />
         ))}
       </main>
     </Layout>
