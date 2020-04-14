@@ -49,7 +49,7 @@ export default ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
-      <Flex justifyContent="space-between" alignItems="baseline">
+      <Flex justifyContent="space-between" alignItems="center">
         <h1 style={{ margin: `${rhythm(1 / 2)}`, marginLeft: 0 }}>About me</h1>
         <Social />
       </Flex>
