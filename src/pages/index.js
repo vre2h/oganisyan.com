@@ -25,7 +25,10 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(0),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link
+                  style={{ boxShadow: 'none' }}
+                  to={`blog/${node.fields.slug}`}
+                >
                   {title}
                 </Link>
               </h3>

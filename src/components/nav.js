@@ -30,7 +30,13 @@ export default () => (
     }}
   >
     {urls.map(({ url, title }) => (
-      <Link style={{ margin: 7 }} to={url} key={title}>
+      <Link
+        activeClassName="active-link"
+        style={{ margin: 7 }}
+        to={url}
+        key={title}
+        partiallyActive
+      >
         {title}
       </Link>
     ))}
