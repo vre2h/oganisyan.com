@@ -52,6 +52,8 @@ const Bio = () => {
           style={{
             width: rhythm(2.5),
             height: rhythm(2.5),
+            marginRight: !image ? 20 : 0,
+            marginLeft: image ? 20 : 0,
           }}
           className="bio-image"
         />
