@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import avatar from '../../content/assets/profile-pic.jpg'
 import avatarBlue from '../../content/assets/profile-pic-blue.jpg'
 import { rhythm } from '../utils/typography'
+
 import Social from './social'
 
 const Bio = () => {
@@ -41,6 +42,7 @@ const Bio = () => {
         style={{
           display: 'flex',
           alignItems: 'center',
+          flexDirection: image ? 'row-reverse' : 'row',
         }}
       >
         <img
@@ -58,7 +60,7 @@ const Bio = () => {
             cursor: 'pointer',
             outline: 'none',
           }}
-          className="image"
+          className="bio-image"
         />
 
         <p style={{ marginBottom: 0 }}>{author.summary}</p>

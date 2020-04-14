@@ -143,7 +143,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#f9d678',
         display: 'minimal-ui',
-        icon: 'content/assets/icon.svg',
+        icon: 'content/assets/icons/icon.svg',
         theme_color_in_head: false,
       },
     },

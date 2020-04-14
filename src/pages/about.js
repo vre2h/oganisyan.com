@@ -7,7 +7,7 @@ import Social from '../components/social'
 import Flex from '../components/Flex'
 import { rhythm } from '../utils/typography'
 import aboutPhoto from '../../content/assets/about-photo.jpg'
-import { infoIcon } from '../components/icons'
+import { Info } from '../components/icons'
 
 const Activity = ({ activities, title: activityTitle }) => (
   <section className="activity-wrapper">
@@ -67,31 +67,27 @@ export default ({ data, location }) => {
           <p>
             I’m Vrezh, Software Engineer and Lecturer with a keen interest in
             design, management and education.
-            <small>
-              {infoIcon}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://cutt.ly/oganisyan-cv"
-                style={{ margin: 0 }}
-              >
-                cv
-              </a>
-            </small>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://cutt.ly/oganisyan-cv"
+              style={{ margin: 0, borderBottom: 'none' }}
+            >
+              <Info width="15" className="about-icon-small" />
+            </a>
           </p>
           <p>
             As a Software Engineer I am working a lot with Javascript (React,
             Node.js and ecosystem). I have experience with architecturing big
             and scalable applications.
-            <small>
-              {infoIcon}
+            <small className="info-wrapper">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/vre2h"
-                style={{ margin: 0 }}
+                style={{ margin: 0, borderBottom: 'none' }}
               >
-                Github
+                <Info width="15" className="about-icon-small" />
               </a>
             </small>
           </p>
@@ -102,17 +98,11 @@ export default ({ data, location }) => {
           </p>
         </div>
 
-        <Flex flexDirection="row" flexWrap="no-wrap">
-          <span
-            style={{
-              color: 'hsl(44, 91%, 72%)',
-              fontSize: rhythm(1),
-              marginLeft: 0,
-            }}
-          >
-            {infoIcon}
-          </span>
-          <p>
+        <Flex flexDirection="row" flexWrap="no-wrap" alignItems="center">
+          <Link to="/testimonials" style={{ margin: 0, borderBottom: 'none' }}>
+            <Info width="30" className="about-icon-big" />
+          </Link>
+          <p style={{ margin: 0 }}>
             You can find reviews from my clients, tutors and students in the{' '}
             <Link to="/testimonials">Testimonials section.</Link>
           </p>

@@ -6,20 +6,21 @@ import Layout from '../components/layout'
 import Bio from '../components/bio'
 import Flex from '../components/Flex'
 import { rhythm } from '../utils/typography'
+import { Bookmark } from '../components/icons'
 
 const Item = ({ title, author, review }) => (
   <Flex flexDirection="row" style={{ marginBottom: rhythm(1) }}>
     <div style={{ width: 'calc(100% - 120px)' }}>
       <header style={{}}>
         <div style={{ display: 'flex' }}>
-          <i
+          <Bookmark
+            width="25"
             style={{
-              marginTop: 0,
-              marginRight: 10,
-              color: 'var(--main-color)',
-              fontSize: rhythm(1),
+              marginRight: '10px',
+              alignSelf: 'flex-start',
+              cursor: 'pointer',
+              fill: 'var(--main-color)',
             }}
-            className="fa fa-bookmark"
           />
           <div>
             <h4 style={{ margin: 0 }}>

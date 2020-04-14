@@ -3,3 +3,7 @@
     align-self: flex-end;
   }
 }
+
+.bio-image:hover {
+  border-color: #c47;
+}

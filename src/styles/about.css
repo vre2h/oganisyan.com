@@ -11,6 +11,22 @@
   margin: 0;
 }
 
+.about-icon-big {
+  fill: var(--main-color);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.about-icon-small {
+  fill: var(--main-color);
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.info-wrapper {
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 660px) {
   .about-image {
     float: none;

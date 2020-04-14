@@ -1,34 +1,34 @@
-i {
+.icon {
   margin: 0.3em;
   cursor: pointer;
-  transition: color 300ms ease, margin-top 300ms ease;
+  transition: all 300ms ease;
 }
 
-#twitter:hover i {
-  color: #77ddf6;
+#twitter:hover .icon {
+  fill: #77ddf6;
 }
 
-#telegram:hover i {
-  color: #47a0b6;
+#telegram:hover .icon {
+  fill: #47a0b6;
 }
 
-#github:hover i {
-  color: black;
+#github:hover .icon {
+  fill: black;
 }
 
-#linkedin:hover i,
-#fb:hover i {
-  color: #0177b5;
+#linkedin:hover .icon,
+#fb:hover .icon {
+  fill: #0177b5;
 }
 
-#code:hover i {
-  color: #29a329;
+#code:hover .icon {
+  fill: #29a329;
 }
 
-#stack:hover i {
-  color: #ed780e;
+#stack:hover .icon {
+  fill: #ed780e;
 }
 
-#mail:hover i {
-  color: #d54d40;
+#mail:hover .icon {
+  fill: #d54d40;
 }

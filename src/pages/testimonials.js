@@ -6,16 +6,12 @@ import SEO from '../components/seo'
 import Flex from '../components/Flex'
 import { rhythm } from '../utils/typography'
 import Bio from '../components/bio'
-import { quoteIcon } from '../components/icons'
-
-const quote = (
-  <span style={{ fontSize: rhythm(1.5), lineHeight: 0 }}>{quoteIcon}</span>
-)
+import { QuoteIcon } from '../components/icons'
 
 const ReviewCard = ({ author, text, position }) => (
   <>
     <p style={{ marginBottom: 0 }}>
-      {quote}
+      <QuoteIcon width="40" style={{ fill: 'var(--main-color)' }} />
       {text}
     </p>
     <Flex justifyContent="flex-end" alignItems="center">

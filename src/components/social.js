@@ -1,6 +1,15 @@
 import React from 'react'
 
 import { rhythm } from '../utils/typography'
+import {
+  Twitter,
+  Github,
+  Linkedin,
+  FB,
+  Telegram,
+  Gmail,
+  StackOverflow,
+} from './icons'
 
 export default () => (
   <div
@@ -16,11 +25,20 @@ export default () => (
     <a
       target="_blank"
       rel="noopener noreferrer"
+      id="telegram"
+      className="link"
+      href="https://t.me/vre2h"
+    >
+      <Telegram width="25" className="icon" />
+    </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
       id="twitter"
       className="link"
       href="https://twitter.com/vre2h"
     >
-      <i className="fa fa-twitter" />
+      <Twitter width="25" className="icon" />
     </a>
     <a
       target="_blank"
@@ -29,8 +47,8 @@ export default () => (
       className="link"
       href="https://github.com/vre2h"
     >
-      <i className="fa fa-github" />
-    </a>{' '}
+      <Github width="25" className="icon" />
+    </a>
     <a
       target="_blank"
       rel="noopener noreferrer"
@@ -38,7 +56,7 @@ export default () => (
       className="link"
       href="https://stackoverflow.com/users/10396289/vre2h"
     >
-      <i className="fa fa-stack-overflow" />
+      <StackOverflow width="25" className="icon" />
     </a>{' '}
     <a
       target="_blank"
@@ -47,7 +65,7 @@ export default () => (
       className="link"
       href="https://linkedin.com/in/vre2h"
     >
-      <i className="fa fa-linkedin" />
+      <Linkedin width="25" className="icon" />
     </a>{' '}
     <a
       target="_blank"
@@ -56,7 +74,7 @@ export default () => (
       className="link"
       href="mailto:hovanisyan.vrezh@gmail.com"
     >
-      <i className="fa fa-envelope" />
+      <Gmail width="25" className="icon" />
     </a>{' '}
     <a
       target="_blank"
@@ -65,16 +83,7 @@ export default () => (
       className="link"
       href="https://facebook.com/vre2h"
     >
-      <i className="fa fa-facebook" />
-    </a>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      id="telegram"
-      className="link"
-      href="https://t.me/vre2h"
-    >
-      <i className="fa fa-telegram" />
+      <FB width="25" className="icon" />
     </a>
   </div>
 )
