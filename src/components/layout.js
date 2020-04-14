@@ -96,7 +96,9 @@ const Layout = ({ title, children }) => (
           (Dimension C137)
         </div>
       </Flex>
-      <div color="#ccc" style={{ marginTop: rhythm(1), fontSize: rhythm(0.4) }}>
+      <div
+        style={{ marginTop: rhythm(1), fontSize: rhythm(0.4), color: '#ccc' }}
+      >
         Little Prince by{' '}
         <a
           target="_blank"
@@ -108,7 +110,7 @@ const Layout = ({ title, children }) => (
         </a>{' '}
         😍
       </div>
-      <div color="#ccc" style={{ fontSize: rhythm(0.4) }}>
+      <div style={{ fontSize: rhythm(0.4), color: '#ccc' }}>
         Icons made by{' '}
         <a
           target="_blank"
