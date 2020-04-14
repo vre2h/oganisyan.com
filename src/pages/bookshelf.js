@@ -10,7 +10,7 @@ import { Bookmark } from '../components/icons'
 
 const Item = ({ title, author, review }) => (
   <Flex flexDirection="row" style={{ marginBottom: rhythm(1) }}>
-    <div style={{ width: 'calc(100% - 120px)' }}>
+    <div>
       <header style={{}}>
         <div style={{ display: 'flex' }}>
           <Bookmark
