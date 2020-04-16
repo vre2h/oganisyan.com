@@ -11,8 +11,8 @@ export default () => {
     const handleScroll = () => {
       if (
         // prettier-ignore
-        document.body.scrollTop > 20
-        || document.documentElement.scrollTop > 20
+        document.body.scrollTop > 30
+        || document.documentElement.scrollTop > 30
       ) {
         setVisibility(true)
       } else {
