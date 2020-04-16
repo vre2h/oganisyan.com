@@ -85,18 +85,22 @@ const Layout = ({ title, children }) => (
         color: '#a0a0a0',
         fontSize: rhythm(0.4),
       }}
+      className="footer"
     >
       <Flex flexDirection="row" justifyContent="center" alignItems="center">
         <PlanetEarth
           width="50"
           style={{ cursor: 'pointer', fontSize: rhythm(0.6) }}
+          className="planet"
         />
         <div style={{ marginLeft: 5 }}>
           Made on planet earth. <br />
           (Dimension C137)
         </div>
       </Flex>
-      <div style={{ fontSize: rhythm(0.4), color: '#ccc' }}>
+      <div
+        style={{ marginTop: rhythm(1), fontSize: rhythm(0.4), color: '#ccc' }}
+      >
         Icons made by{' '}
         <a
           target="_blank"
