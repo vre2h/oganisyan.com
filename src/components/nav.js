@@ -35,6 +35,7 @@ export default () => (
       }}
       style={{ margin: 7, marginLeft: 0 }}
       to="/"
+      className="nav-link"
     >
       Blog
     </Link>
@@ -45,6 +46,7 @@ export default () => (
         to={url}
         key={title}
         partiallyActive
+        className="nav-link"
       >
         {title}
       </Link>
