@@ -1,6 +1,11 @@
 start:
 	npx gatsby develop
 
+post:
+	git add .
+	git commit -m 'Add post: $p'
+	make deploy
+
 deploy: lint format build push
 	git push
 	npx gh-pages -d public
