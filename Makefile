@@ -1,7 +1,8 @@
 start:
 	npx gatsby develop
 
-deploy: lint format build
+deploy: lint format build push
+	git push
 	npx gh-pages -d public
 
 build:
@@ -18,3 +19,6 @@ serve:
 
 lint:
 	npx eslint src/
+
+make push:
+	git push
