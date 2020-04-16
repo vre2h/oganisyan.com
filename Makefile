@@ -7,7 +7,6 @@ post:
 	make deploy
 
 deploy: lint format build push
-	git push
 	npx gh-pages -d public
 
 build:
