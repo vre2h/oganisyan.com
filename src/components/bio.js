@@ -27,7 +27,8 @@ const Bio = () => {
 
   const { author } = data.site.siteMetadata
 
-  /* eslint-disable */
+  /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+  /* eslint-disable jsx-a11y/click-events-have-key-events */
   return (
     <div
       style={{
