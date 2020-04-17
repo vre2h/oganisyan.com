@@ -10,7 +10,7 @@ import { QuoteIcon } from '../components/icons'
 
 const ReviewCard = ({ author, text, position }) => (
   <section style={{ marginBottom: rhythm(1.5) }}>
-    <p style={{ marginBottom: 0 }}>
+    <p style={{ marginBottom: 0, fontSize: rhythm(0.55) }}>
       <QuoteIcon
         width="40"
         style={{
@@ -22,7 +22,7 @@ const ReviewCard = ({ author, text, position }) => (
       {text}
     </p>
     <Flex justifyContent="flex-end" alignItems="center">
-      <div style={{ color: 'var(--main-color)' }}>
+      <div style={{ color: 'var(--main-color)', fontSize: rhythm(0.55) }}>
         — {author}, {position}
       </div>
     </Flex>
