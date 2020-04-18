@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
@@ -6,11 +9,14 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 import Date from '../components/date'
+import useScrollToTop from '../hooks/useScrollToTop'
+import princeJump from '../../content/assets/prince-jump.png'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const [showScrollToTop, scrollToTop] = useScrollToTop()
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -74,6 +80,19 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+      <img
+        onClick={scrollToTop}
+        src={princeJump}
+        alt="^"
+        style={{
+          position: 'fixed',
+          right: '30px',
+          bottom: 0,
+          display: showScrollToTop ? 'block' : 'none',
+          width: '50px',
+          cursor: 'pointer',
+        }}
+      />
     </Layout>
   )
 }
