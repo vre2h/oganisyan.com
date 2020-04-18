@@ -1,3 +1,11 @@
+const jobs = require('./content/projects/jobs.json')
+const traineeships = require('./content/projects/traineeships.json')
+const education = require('./content/projects/education.json')
+const clients = require('./content/reviews/clients.json')
+const students = require('./content/reviews/students.json')
+const tutors = require('./content/reviews/tutors.json')
+const books2020 = require('./content/books/2020.json')
+
 module.exports = {
   siteMetadata: {
     title: 'Oganisyan Vrezh',
@@ -13,73 +21,11 @@ module.exports = {
       github: 'vre2h',
       telegram: 'vre2h',
     },
-    projects: [
-      {
-        title: 'Simply Technologies',
-        site: 'https://simplytechnologies.net',
-        period: 'December 2018 - ongoing',
-        roles: 'Fullstack Developer',
-        stack: 'HTML/CSS, JS, React, Node.js',
-      },
-      {
-        title: 'Armenian Code Academy',
-        site: 'https://aca.am',
-        period: 'August 2019 - ongoing',
-        roles: 'Lecturer',
-        stack: 'HTML/CSS, JS, React',
-      },
-    ],
-    traineeships: [
-      {
-        title: 'Kojoyan Design Studio',
-        site: 'https://www.kojoyanstudio.com/',
-        period: 'October 2017 – December 2017',
-        roles: 'Designer',
-        stack: 'Adobe Photoshop, Adobe Illustrator',
-      },
-      {
-        title: 'Armenian Code Academy',
-        site: 'https://aca.am',
-        period: 'February 2018 – July 2018',
-        roles: 'Frontend Trainee',
-        stack: 'HTML/CSS, JS, React',
-      },
-    ],
-    education: [
-      {
-        title: 'Moscow State University',
-        site: 'http://msu.am',
-        period: 'September 2015 - July 2019',
-        roles: 'Bachelor',
-        stack: 'Computer Science',
-      },
-      {
-        title: 'Russian-Armenian University',
-        site: 'http://rau.am/eng',
-        period: 'September 2019 - June 2021',
-        roles: 'Master',
-        stack: 'Psychology and Human Behaviour',
-      },
-    ],
-    testimonials: [
-      {
-        author: 'Ilon Mask',
-        position: 'CEO at Tesla',
-        text: `Pariatur anim tempor id id nostrud voluptate tempor sint pariatur
-      proident occaecat ea. Qui ea laboris amet deserunt eu non non
-      consequat ipsum cillum id aute quis duis. Eiusmod excepteur irure
-      excepteur amet anim labore dolore do esse.`,
-      },
-      {
-        author: 'Pavel Durov',
-        position: 'Ceo and Founder at Telegram',
-        text: `Mollit duis voluptate ad consequat pariatur culpa nostrud culpa
-        deserunt aliqua reprehenderit officia duis. Qui sint aliqua ipsum
-        veniam et officia aliqua sunt. Dolore aliqua excepteur sint qui magna
-        officia tempor eiusmod dolore nisi. Exercitation proident consectetur
-        cupidatat aute ullamco ea duis id occaecat irure enim aliqua`,
-      },
-    ],
+    projects: jobs.data,
+    traineeships: traineeships.data,
+    education: education.data,
+    testimonials: [...clients.data, ...students.data, ...tutors.data],
+    books: [books2020],
   },
   plugins: [
     {

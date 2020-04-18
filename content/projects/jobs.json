@@ -1,0 +1,19 @@
+{
+  "title": "Jobs",
+  "data": [
+    {
+      "title": "Simply Technologies",
+      "site": "https://simplytechnologies.net",
+      "period": "December 2018 - ongoing",
+      "roles": "Fullstack Developer",
+      "stack": "HTML/CSS, JS, React, Node.js"
+    },
+    {
+      "title": "Armenian Code Academy",
+      "site": "https://aca.am",
+      "period": "August 2019 - ongoing",
+      "roles": "Lecturer",
+      "stack": "HTML/CSS, JS, React"
+    }
+  ]
+}
