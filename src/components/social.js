@@ -18,7 +18,7 @@ export default () => (
       textAlign: 'center',
       fontSize: `${rhythm(1.3)}`,
       color: '#555',
-      overflow: 'auto',
+      overflowX: 'auto',
     }}
     className="social"
   >
