@@ -10,20 +10,41 @@ import { QuoteIcon } from '../components/icons'
 
 const ReviewCard = ({ author, text, position }) => (
   <section style={{ marginBottom: rhythm(1.5) }}>
-    <p style={{ marginBottom: 0, fontSize: rhythm(0.55) }}>
-      <QuoteIcon
-        width="40"
-        style={{
-          fill: 'var(--main-color)',
-          marginRight: 10,
-          cursor: 'pointer',
-        }}
-      />
-      {text}
-    </p>
+    {text.split('\n').map((t, idx) => {
+      const isFirstPart = idx === 0
+
+      if (isFirstPart) {
+        return (
+          <p style={{ marginBottom: 10, fontSize: rhythm(0.55) }}>
+            <QuoteIcon
+              width="40"
+              style={{
+                fill: 'var(--main-color)',
+                marginRight: 10,
+                cursor: 'pointer',
+              }}
+            />
+            {t}
+          </p>
+        )
+      }
+
+      return <p style={{ marginBottom: 0, fontSize: rhythm(0.55) }}>{t}</p>
+    })}
     <Flex justifyContent="flex-end" alignItems="center">
-      <div style={{ color: 'var(--main-color)', fontSize: rhythm(0.55) }}>
-        — {author}, {position}
+      <div
+        style={{
+          color: 'var(--main-color)',
+          fontSize: rhythm(0.55),
+          marginTop: 10,
+          fontStyle: 'italic',
+        }}
+      >
+        <p style={{ margin: 0, textAlign: 'right' }}>— {author}</p>
+
+        <p style={{ margin: 0, textAlign: 'right', fontSize: rhythm(0.5) }}>
+          {position}
+        </p>
       </div>
     </Flex>
   </section>
