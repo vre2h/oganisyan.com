@@ -29,7 +29,7 @@ const ReviewCard = ({ author, text, position }) => (
         )
       }
 
-      return <p style={{ marginBottom: 0, fontSize: rhythm(0.55) }}>{t}</p>
+      return <p style={{ marginBottom: 10, fontSize: rhythm(0.55) }}>{t}</p>
     })}
     <Flex justifyContent="flex-end" alignItems="center">
       <div

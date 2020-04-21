@@ -32,17 +32,21 @@ const Book = ({ title, author, review }) => (
   </Flex>
 )
 
-const BookList = ({ books, title }) => (
-  <section>
-    <h4>{title}</h4>
-    {books.map(({ title: bookTitle, author, review }) => (
-      <Book title={bookTitle} author={author} review={review} />
-    ))}
-  </section>
-)
+const BookList = ({ books, title, reverse }) => {
+  const items = reverse ? books.reverse() : books
+  return (
+    <section>
+      <h4>{title}</h4>
+      {items.map(({ title: bookTitle, author, review }) => (
+        <Book title={bookTitle} author={author} review={review} />
+      ))}
+    </section>
+  )
+}
 
 export default ({ data, location }) => {
   const { title: siteTitle } = data.site.siteMetadata
+  const { books } = data.site.siteMetadata
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -52,42 +56,9 @@ export default ({ data, location }) => {
       <h1 style={{ margin: `${rhythm(1 / 2)} 0 ${rhythm(2)} 0` }}>Bookshelf</h1>
 
       <main style={{ marginTop: rhythm(1) }}>
-        <BookList
-          books={[
-            { title: 'War and Peace', author: 'Leo Tolstoy', review: '🔥🔥🔥' },
-            {
-              title: 'Steve Jobs',
-              author: 'Walter Isaacson',
-              review: '🔥🔥🔥🔥🔥',
-            },
-            { title: 'The Jedi Way', author: 'Maxim Dorofeev', review: '🔥' },
-          ]}
-          title="2020"
-        />
-        <BookList
-          books={[
-            { title: 'War and Peace', author: 'Leo Tolstoy', review: '🔥🔥🔥' },
-            {
-              title: 'Steve Jobs',
-              author: 'Walter Isaacson',
-              review: '🔥🔥🔥🔥🔥',
-            },
-            { title: 'The Jedi Way', author: 'Maxim Dorofeev', review: '🔥' },
-          ]}
-          title="2019"
-        />
-        <BookList
-          books={[
-            { title: 'War and Peace', author: 'Leo Tolstoy', review: '🔥🔥🔥' },
-            {
-              title: 'Steve Jobs',
-              author: 'Walter Isaacson',
-              review: '🔥🔥🔥🔥🔥',
-            },
-            { title: 'The Jedi Way', author: 'Maxim Dorofeev', review: '🔥' },
-          ]}
-          title="2018"
-        />
+        {books.map(({ title, books: yearBooks }) => (
+          <BookList reverse title={title} books={yearBooks} />
+        ))}
       </main>
     </Layout>
   )
@@ -98,6 +69,15 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        books {
+          title
+          year
+          books {
+            author
+            title
+            review
+          }
+        }
       }
     }
   }

@@ -3,9 +3,39 @@
   "year": "2020",
   "books": [
     {
-      "title": "",
-      "author": "",
-      "review": ""
+      "title": "Jedi Techniques",
+      "author": "Maxim Dorofeev",
+      "review": "🔥🔥🔥🔥🔥"
+    },
+    {
+      "title": "Composing Software",
+      "author": "Eric Elliott",
+      "review": "👨🏻‍💻👨🏻‍💻👨🏻‍💻"
+    },
+    {
+      "title": "Grokking algorithms",
+      "author": "Aditya Bhargava",
+      "review": "👨🏻‍💻👨🏻‍💻👨🏻‍💻👨🏻‍💻👨🏻‍💻"
+    },
+    {
+      "title": "Optimization Guide",
+      "author": "Carlos Bueno",
+      "review": "👨🏻‍💻👨🏻‍💻👨🏻‍💻"
+    },
+    {
+      "title": "The inner game of the tennis",
+      "author": "W. Timothy Gallwey",
+      "review": "🎾🎾🎾🎾"
+    },
+    {
+      "title": "12 Rules for Life: An Antidote to Chaos",
+      "author": "Jordan B. Peterson",
+      "review": "🔥🔥🔥🔥"
+    },
+    {
+      "title": "Jedi Way",
+      "author": "Maxim Dorofeev",
+      "review": "🔥🔥🔥🔥🔥"
     }
   ]
 }

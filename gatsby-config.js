@@ -5,6 +5,9 @@ const clients = require('./content/reviews/clients.json')
 const students = require('./content/reviews/students.json')
 const tutors = require('./content/reviews/tutors.json')
 const books2020 = require('./content/books/2020.json')
+const books2019 = require('./content/books/2019.json')
+const books2018 = require('./content/books/2018.json')
+const books2017 = require('./content/books/2017.json')
 
 module.exports = {
   siteMetadata: {
@@ -25,7 +28,7 @@ module.exports = {
     traineeships: traineeships.data,
     education: education.data,
     testimonials: [...clients.data, ...students.data, ...tutors.data],
-    books: [books2020],
+    books: [books2020, books2019, books2018, books2017],
   },
   plugins: [
     {
