@@ -11,6 +11,7 @@ import { rhythm } from '../utils/typography'
 import Date from '../components/date'
 import useScrollToTop from '../hooks/useScrollToTop'
 import princeJump from '../../content/assets/prince-jump.png'
+import ShareToSocial from '../components/shareToSocial'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -37,11 +38,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <p
             style={{
               display: 'block',
-              marginBottom: rhythm(1),
+              marginBottom: 0,
             }}
           >
             <Date date={post.frontmatter.date} />
           </p>
+          <ShareToSocial
+            title={post.frontmatter.title}
+            pageUrl={location.pathname}
+            style={{ marginBottom: -20 }}
+          />
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr

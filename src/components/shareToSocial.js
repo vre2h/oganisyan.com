@@ -5,7 +5,7 @@ import { rhythm } from '../utils/typography'
 
 import { Twitter, Linkedin, FB, VK } from './icons'
 
-export default ({ pageUrl, title }) => {
+export default ({ pageUrl, title, style }) => {
   const {
     site: {
       siteMetadata: { siteUrl },
@@ -21,7 +21,7 @@ export default ({ pageUrl, title }) => {
   `)
 
   return (
-    <div className="buttons notranslate desktop-only">
+    <div style={style}>
       <nav
         style={{
           display: 'flex',
