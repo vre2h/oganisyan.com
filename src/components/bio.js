@@ -50,6 +50,8 @@ const Bio = () => {
           onClick={() => toggleImage((i) => !i)}
           src={image ? avatarBlue : avatar}
           alt={author.name}
+          width="70"
+          height="70"
           style={{
             width: rhythm(2.5),
             height: rhythm(2.5),
