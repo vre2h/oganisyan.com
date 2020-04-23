@@ -81,7 +81,7 @@ const Layout = ({ title, children }) => (
     <footer
       style={{
         textAlign: 'center',
-        marginTop: rhythm(3),
+        marginTop: rhythm(2),
         color: '#a0a0a0',
         fontSize: rhythm(0.4),
       }}
