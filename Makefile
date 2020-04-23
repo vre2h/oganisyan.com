@@ -6,7 +6,7 @@ post:
 	git commit -m 'Add post: $p'
 	make deploy
 
-deploy: lint format build push
+deploy: clean lint format build push
 	npx gh-pages -d public
 
 build:
