@@ -8,6 +8,7 @@
     "url": "https://github.com/vre2h/oganisyan.com/issues"
   },
   "dependencies": {
+    "disqus-react": "^1.0.8",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-google-analytics": "^2.2.2",

@@ -3,6 +3,7 @@
 
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { DiscussionEmbed } from 'disqus-react'
 
 import Bio from '../components/bio'
 import Layout from '../components/layout'
@@ -18,6 +19,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const [showScrollToTop, scrollToTop] = useScrollToTop()
+
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: {
+      identifier: location.pathname,
+      title: post.frontmatter.title,
+    },
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -46,7 +55,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <ShareToSocial
             title={post.frontmatter.title}
             pageUrl={location.pathname}
-            style={{ marginBottom: -20 }}
+            style={{ marginBottom: 20 }}
           />
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -86,6 +95,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+      {/* eslint-disable-next-line */}
+      <DiscussionEmbed {...disqusConfig} />
       <img
         onClick={scrollToTop}
         src={princeJump}
