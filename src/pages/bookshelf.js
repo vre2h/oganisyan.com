@@ -20,7 +20,7 @@ const Book = ({ title, author, review }) => (
           fill: 'var(--main-color)',
         }}
       />
-      <div>
+      <div style={{ width: 'calc(100% - 30px)' }}>
         <h4 style={{ margin: 0 }}>
           {title} {review}
         </h4>
