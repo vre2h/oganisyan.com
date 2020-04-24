@@ -101,9 +101,9 @@ const PlanetEarth = ({ height, width, className, style }) => (
         style={{
           fill: 'none',
           stroke: '"#B6B8BE"',
-          'stroke-width': 0,
-          'stroke-linecap': 'round',
-          'stroke-linejoin': 'round',
+          strokeWidth: 0,
+          strokeLinecap: 'round',
+          strokeLinejoin: 'round',
         }}
         d="M231.758,28
     c-1.333,0-1.847,0-1.908,0"

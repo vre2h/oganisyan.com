@@ -8,14 +8,14 @@ import { rhythm } from '../utils/typography'
 import Bio from '../components/bio'
 import { QuoteIcon } from '../components/icons'
 
-const ReviewCard = ({ author, text, position }) => (
+const ReviewCard = ({ author, text, position, date }) => (
   <section style={{ marginBottom: rhythm(1.5) }}>
     {text.split('\n').map((t, idx) => {
       const isFirstPart = idx === 0
 
       if (isFirstPart) {
         return (
-          <p style={{ marginBottom: 10, fontSize: rhythm(0.55) }}>
+          <p key={t} style={{ marginBottom: 10, fontSize: rhythm(0.55) }}>
             <QuoteIcon
               width="40"
               style={{
@@ -29,7 +29,11 @@ const ReviewCard = ({ author, text, position }) => (
         )
       }
 
-      return <p style={{ marginBottom: 10, fontSize: rhythm(0.55) }}>{t}</p>
+      return (
+        <p key={t} style={{ marginBottom: 10, fontSize: rhythm(0.55) }}>
+          {t}
+        </p>
+      )
     })}
     <Flex justifyContent="flex-end" alignItems="center">
       <div
@@ -41,9 +45,11 @@ const ReviewCard = ({ author, text, position }) => (
         }}
       >
         <p style={{ margin: 0, textAlign: 'right' }}>— {author}</p>
-
         <p style={{ margin: 0, textAlign: 'right', fontSize: rhythm(0.5) }}>
           {position}
+        </p>
+        <p style={{ margin: 0, textAlign: 'right', fontSize: rhythm(0.5) }}>
+          Period • {date}
         </p>
       </div>
     </Flex>
@@ -64,12 +70,13 @@ export default ({ data, location }) => {
         </h1>
       </Flex>
       <main style={{ marginTop: rhythm(1) }}>
-        {testimonials.map(({ author, text, position }) => (
+        {testimonials.map(({ author, text, position, date }) => (
           <ReviewCard
             key={author}
             author={author}
             text={text}
             position={position}
+            date={date}
           />
         ))}
       </main>
@@ -86,6 +93,7 @@ export const pageQuery = graphql`
           author
           text
           position
+          date
         }
       }
     }
