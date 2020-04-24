@@ -21,8 +21,8 @@ const Book = ({ title, author, review }) => (
         }}
       />
       <div style={{ width: 'calc(100% - 30px)' }}>
-        <h4 style={{ margin: 0 }}>
-          {title} {review}
+        <h4 style={{ margin: 0, lineHeight: 1.4 }}>
+          {title} <span style={{ color: 'var(--main-color)' }}>•</span> {review}
         </h4>
         <small style={{ fontStyle: 'italic', color: '#a5a5a5' }}>
           by {author}
