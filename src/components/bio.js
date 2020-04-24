@@ -60,8 +60,14 @@ const Bio = () => {
           }}
           className="bio-image"
         />
-
-        <p style={{ marginBottom: 0 }}>{author.summary}</p>
+        <div>
+          <p style={{ marginBottom: 0, fontStyle: 'italic' }}>
+            2% human <span style={{ color: 'var(--main-color)' }}>•</span> 8%
+            being <span style={{ color: 'var(--main-color)' }}>•</span> 90%
+            rebel
+          </p>
+          <p style={{ marginBottom: 0 }}>{author.summary}</p>
+        </div>
       </div>
       <div className="social-wrapper">
         <Social />
