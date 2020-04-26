@@ -15,7 +15,7 @@ module.exports = {
     author: {
       name: 'Oganisyan Vrezh',
       summary:
-        'Software Engineer with a keen interest in design, management and education.',
+        'Software Engineer and Lecturer with a keen interest in design, management and education.',
     },
     description: 'A little bit about me.',
     siteUrl: 'https://oganisyan.com/',

@@ -1,5 +1,12 @@
 {
   "title": "Review's from tutors",
   "year": "2020",
-  "data": []
+  "data": [
+    {
+      "author": "Gevorg Topikyan",
+      "text": "We were working with Vrezh during his internship program in Armenian Code Academy. His infinte love to new knowledge, combined with extraordinary learning skills, helped him not only to master React internship, but also build a complete application with React and Nodejs. It was my pleasure to work with him.",
+      "position": "Co-founder at Haffo",
+      "date": "june - august 2018"
+    }
+  ]
 }
