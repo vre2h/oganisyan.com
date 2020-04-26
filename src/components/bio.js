@@ -60,7 +60,7 @@ const Bio = () => {
           }}
           className="bio-image"
         />
-        <div>
+        <div style={{ width: 'calc(100% - 90px)' }}>
           <p style={{ marginBottom: 0, fontStyle: 'italic' }}>
             2% human <span style={{ color: 'var(--main-color)' }}>•</span> 8%
             being <span style={{ color: 'var(--main-color)' }}>•</span> 90%
