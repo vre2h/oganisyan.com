@@ -8,29 +8,48 @@ import Flex from '../components/Flex'
 import { rhythm } from '../utils/typography'
 import { Bookmark } from '../components/icons'
 
-const Book = ({ title, author, review }) => (
-  <Flex flexDirection="row" style={{ marginBottom: rhythm(1) }}>
-    <div style={{ display: 'flex' }}>
-      <Bookmark
-        width="25"
-        style={{
-          marginRight: '10px',
-          alignSelf: 'flex-start',
-          cursor: 'pointer',
-          fill: 'var(--main-color)',
-        }}
-      />
-      <div style={{ width: 'calc(100% - 30px)' }}>
-        <h4 style={{ margin: 0, lineHeight: 1.4 }}>
-          {title} <span style={{ color: 'var(--main-color)' }}>•</span> {review}
-        </h4>
-        <small style={{ fontStyle: 'italic', color: '#a5a5a5' }}>
-          by {author}
-        </small>
+const Book = ({ title, author, review }) => {
+  const rating = new Array(Number((review % 3) + 1)).fill(
+    <span
+      style={{
+        position: 'relative',
+        top: '-1px',
+        marginLeft: '7px',
+        color: 'var(--main-color)',
+      }}
+    >
+      ★
+    </span>,
+  )
+  return (
+    <Flex flexDirection="row" style={{ marginBottom: rhythm(1) }}>
+      <div style={{ display: 'flex', width: '100%' }}>
+        <div>
+          <Bookmark
+            width="25"
+            style={{
+              marginRight: '10px',
+              alignSelf: 'flex-start',
+              cursor: 'pointer',
+              fill: 'var(--main-color)',
+            }}
+          />
+        </div>
+        <div>
+          <Flex>
+            <h4 style={{ margin: 0, lineHeight: 1.4 }}>
+              {title}
+              {rating}
+            </h4>
+          </Flex>
+          <small style={{ fontStyle: 'italic', color: '#a5a5a5' }}>
+            by {author}
+          </small>
+        </div>
       </div>
-    </div>
-  </Flex>
-)
+    </Flex>
+  )
+}
 
 const BookList = ({ books, title, reverse }) => {
   const items = reverse ? books.reverse() : books
