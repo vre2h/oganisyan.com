@@ -27,7 +27,7 @@ export default () => (
       rel="noopener noreferrer"
       id="telegram"
       className="link"
-      href="https://t.me/vre2h"
+      href="https://t.me/oganisyancom"
     >
       <Telegram width="25" className="icon" />
     </a>

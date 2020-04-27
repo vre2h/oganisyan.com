@@ -66,7 +66,17 @@ const Bio = () => {
             being <span style={{ color: 'var(--main-color)' }}>•</span> 90%
             rebel
           </p>
-          <p style={{ marginBottom: 0 }}>{author.summary}</p>
+          <p style={{ marginBottom: 0 }}>
+            {author.summary}{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              id="telegram-channel"
+              href="https://t.me/oganisyancom"
+            >
+              <small>Subscribe to telegram channel.</small>
+            </a>
+          </p>
         </div>
       </div>
       <div className="social-wrapper">
