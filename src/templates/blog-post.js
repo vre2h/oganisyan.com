@@ -9,7 +9,6 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
-import Date from '../components/date'
 import useScrollToTop from '../hooks/useScrollToTop'
 import princeJump from '../../content/assets/prince-jump.png'
 import ShareToSocial from '../components/shareToSocial'
@@ -50,7 +49,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: 0,
             }}
           >
-            <Date date={post.frontmatter.date} />
+            <small style={{ color: '#a0a0a0' }}>
+              {post.frontmatter.date}{' '}
+              <span
+                style={{ color: 'var(--main-color)', fontSize: rhythm(0.5) }}
+              >
+                •
+              </span>{' '}
+              {post.timeToRead} min
+            </small>
           </p>
           <ShareToSocial
             title={post.frontmatter.title}
@@ -127,6 +134,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

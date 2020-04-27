@@ -4,7 +4,6 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
-import Date from '../components/date'
 import Bio from '../components/bio'
 
 const BlogIndex = ({ data, location }) => {
@@ -22,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
             <header>
               <h3
                 style={{
-                  marginBottom: rhythm(0),
+                  marginBottom: rhythm(0.2),
                 }}
               >
                 <Link
@@ -32,7 +31,15 @@ const BlogIndex = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <Date date={node.frontmatter.date} />
+              <small style={{ color: '#a0a0a0' }}>
+                {node.frontmatter.date}{' '}
+                <span
+                  style={{ color: 'var(--main-color)', fontSize: rhythm(0.5) }}
+                >
+                  •
+                </span>{' '}
+                {node.timeToRead} min
+              </small>
             </header>
             <section>
               <p
@@ -64,6 +71,7 @@ export const pageQuery = graphql`
           fields {
             slug
           }
+          timeToRead
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
