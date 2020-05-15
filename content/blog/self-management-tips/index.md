@@ -8,12 +8,12 @@ _Inspired by the Coursera course "Learning How to Learn" by Dr. Terrence Sejnows
 
 ## Table of contents
 
-- Part 1. How to cope with procrastination
-- Part 2. Chunking
-  - 2.1. Illusion of competence
-  - 2.2 Seeing the bigger picture
-- Part 3. Explore memory: long and short term
-- Part 4. The importance of rest and mindfulness
+- Part 1. [How to cope with procrastination](#part-1-how-to-cope-with-procrastination)
+- Part 2. [Chunking](#part-2-chunking)
+  - 2.1. [Illusion of competence](#21-illusion-of-competence)
+  - 2.2 [Seeing the bigger picture](#22-seeing-the-bigger-picture)
+- Part 3. [Explore memory: long and short term](#part-3-explore-memory-long-and-short-term)
+- Part 4. [The importance of rest and mindfulness](#part-4-the-importance-of-rest-and-mindfulness)
 
 ## Part 1. How to cope with procrastination
 

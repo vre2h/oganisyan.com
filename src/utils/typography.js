@@ -12,6 +12,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }) => ({
     color: 'var(--hover-color)',
     borderBottomColor: 'var(--hover-border-color)',
   },
+  '.anchor': {
+    borderBottom: 'none',
+  },
   '.active-link': {
     color: 'var(--hover-color)',
     borderBottomColor: 'var(--hover-border-color)',
