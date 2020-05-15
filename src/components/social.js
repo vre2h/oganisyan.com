@@ -19,6 +19,7 @@ export default () => (
       fontSize: `${rhythm(1.3)}`,
       color: '#555',
       overflowX: 'auto',
+      marginTop: '10px',
     }}
     className="social"
   >
