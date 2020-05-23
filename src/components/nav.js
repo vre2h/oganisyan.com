@@ -16,6 +16,10 @@ const urls = [
     url: '/bookshelf',
     title: 'Bookshelf',
   },
+  {
+    url: 'filmAndSeries',
+    title: 'Movies and TV Shows',
+  },
 ]
 
 export default () => (
@@ -23,6 +27,7 @@ export default () => (
     style={{
       display: 'flex',
       fontSize: rhythm(0.55),
+      flexWrap: 'wrap',
     }}
   >
     <Link
