@@ -1,5 +1,5 @@
 ---
-title: Self management tips
+title: Management and Learning tips
 date: "2020-05-11"
 description: "A little list of tips which may help you to increase your productivity and start learn better. Based on the work of Dr. Terrence Sejnowski and Dr. Barbara Oakley."
 ---
