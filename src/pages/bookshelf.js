@@ -51,17 +51,14 @@ const Book = ({ title, author, review }) => {
   )
 }
 
-const BookList = ({ books, title, reverse }) => {
-  const items = reverse ? books.reverse() : books
-  return (
-    <section>
-      <h4>{title}</h4>
-      {items.map(({ title: bookTitle, author, review }) => (
-        <Book title={bookTitle} author={author} review={review} />
-      ))}
-    </section>
-  )
-}
+const BookList = ({ books, title }) => (
+  <section>
+    <h4>{title}</h4>
+    {books.map(({ title: bookTitle, author, review }) => (
+      <Book title={bookTitle} author={author} review={review} />
+    ))}
+  </section>
+)
 
 export default ({ data, location }) => {
   const { title: siteTitle } = data.site.siteMetadata

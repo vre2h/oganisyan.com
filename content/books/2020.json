@@ -3,7 +3,7 @@
   "year": "2020",
   "books": [
     {
-      "title": "Jedi Way",
+      "title": "Jedi Techniques",
       "author": "Maxim Dorofeev",
       "review": "5"
     },
@@ -33,7 +33,7 @@
       "review": "4"
     },
     {
-      "title": "Jedi Techniques",
+      "title": "Jedi Way",
       "author": "Maxim Dorofeev",
       "review": "5"
     },

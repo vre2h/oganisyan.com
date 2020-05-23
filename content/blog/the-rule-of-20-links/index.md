@@ -20,7 +20,7 @@ _Note, the number of links you need to achieve the same level may vary depends o
 
 | Stages of mastering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              | Knowledge|
 |---------------------------------------------------|-----------------------------------------------------------------------------------|
-| Link&nbsp; 0 - 1                                      | Getting familiar with the topic: (in the best case understanding the main concepts) idea                                                                                                                                   |
+| Link&nbsp; 0 - 1                                      | Getting familiar with the topic: (in the best case understanding the main concepts)                                                                                                                                   |
 | Link&nbsp; 1 - 6                                      | Solving template problems tasks                                                                                                                               |
 | Link&nbsp; 6 - 10                                     | Solving applicable tasks and basic vision of big picture                                                                                         |
 | Link&nbsp; 10 - 15                                    | Acquiring with the underlying ideas and why's. Understanding the theoretical. and practical use of the topic |
