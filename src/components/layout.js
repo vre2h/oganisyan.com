@@ -5,7 +5,7 @@ import { rhythm } from '../utils/typography'
 import littlePrince from '../../content/assets/little-prince.png'
 
 import Nav from './nav'
-import { mainIcon, PlanetEarth } from './icons'
+import { mainIcon, PlanetEarth, Telegram } from './icons'
 import Flex from './Flex'
 
 const Layout = ({ title, children }) => (
@@ -59,9 +59,9 @@ const Layout = ({ title, children }) => (
               cursor: 'pointer',
             }}
           />
-
-          {mainIcon}
+          {mainIcon}{' '}
         </div>
+
         <Link
           style={{
             boxShadow: 'none',
@@ -75,6 +75,16 @@ const Layout = ({ title, children }) => (
           {title}
         </Link>
       </h3>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        id="telegram-channel"
+        href="https://t.me/oganisyancom"
+        className="main-subscribe"
+      >
+        <Telegram width="15" className="icon" />
+        Subscribe
+      </a>
       <Nav />
     </header>
     <main>{children}</main>

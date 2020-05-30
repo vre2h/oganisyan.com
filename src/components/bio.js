@@ -61,22 +61,20 @@ const Bio = () => {
           className="bio-image"
         />
         <div style={{ width: 'calc(100% - 90px)' }}>
-          <p style={{ marginBottom: 0, fontStyle: 'italic' }}>
-            2% human <span style={{ color: 'var(--main-color)' }}>•</span> 8%
-            being <span style={{ color: 'var(--main-color)' }}>•</span> 90%
-            rebel
-          </p>
           <p style={{ marginBottom: 0 }}>
-            {author.summary}{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              id="telegram-channel"
-              href="https://t.me/oganisyancom"
-            >
-              <small>Subscribe to telegram channel.</small>
-            </a>
+            I&apos;m Oganisyan Vrezh, a software engineer, lecturer, and rebel.{' '}
+            <br />
+            Here I write about education, management, and the art of
+            non-conformity.{' '}
           </p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            id="telegram-channel"
+            href="https://t.me/oganisyancom"
+          >
+            <small>Subscribe to the telegram channel to stay tuned.</small>
+          </a>
         </div>
       </div>
       <div className="social-wrapper">
