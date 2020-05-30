@@ -10,6 +10,7 @@
 .main-subscribe {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   padding: 0px 7px;
 
   background: rgba(0, 0, 0, 0.1);

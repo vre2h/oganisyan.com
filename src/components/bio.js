@@ -44,6 +44,7 @@ const Bio = () => {
           display: 'flex',
           alignItems: 'center',
           flexDirection: image ? 'row-reverse' : 'row',
+          fontSize: 15,
         }}
       >
         <img
@@ -62,10 +63,9 @@ const Bio = () => {
         />
         <div style={{ width: 'calc(100% - 90px)' }}>
           <p style={{ marginBottom: 0 }}>
-            I&apos;m Oganisyan Vrezh, a software engineer, lecturer, and rebel.{' '}
-            <br />
+            I&apos;m Oganisyan Vrezh, a software engineer, lecturer, and rebel.
             Here I write about education, management, and the art of
-            non-conformity.{' '}
+            non-conformity.
           </p>
           <a
             target="_blank"
