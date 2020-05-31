@@ -4,6 +4,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { DiscussionEmbed } from 'disqus-react'
+import { get } from 'lodash'
 
 import Bio from '../components/bio'
 import Layout from '../components/layout'
@@ -18,6 +19,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const [showScrollToTop, scrollToTop] = useScrollToTop()
+  const featuredImgFluid = get(
+    post,
+    'frontmatter.featuredImage.childImageSharp.fluid',
+  )
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
@@ -32,6 +37,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        postImage={featuredImgFluid}
       />
       <article>
         <header>
@@ -138,6 +144,13 @@ export const pageQuery = graphql`
       timeToRead
       frontmatter {
         title
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         date(formatString: "MMMM DD, YYYY")
         description
       }

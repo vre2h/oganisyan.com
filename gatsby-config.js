@@ -8,7 +8,6 @@ const books2020 = require('./content/books/2020.json')
 const books2019 = require('./content/books/2019.json')
 const books2018 = require('./content/books/2018.json')
 const books2017 = require('./content/books/2017.json')
-const photo = require('./content/assets/about-photo.jpg')
 
 module.exports = {
   siteMetadata: {
@@ -18,7 +17,6 @@ module.exports = {
       summary:
         'Software Engineer and Lecturer with a keen interest in design, management and education.',
     },
-    image: photo,
     description: 'A little bit about me.',
     siteUrl: 'https://oganisyan.com/',
     social: {

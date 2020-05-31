@@ -2,6 +2,7 @@
 title: Management and Learning tips
 date: "2020-05-11"
 description: "A little list of tips which may help you to increase your productivity and start learn better. Based on the work of Dr. Terrence Sejnowski and Dr. Barbara Oakley."
+featuredImage: ""
 ---
 
 _Inspired by the Coursera course "Learning How to Learn" by Dr. Terrence Sejnowski and Dr. Barbara Oakley. Note, I’m not a scientist and all information below based on the researches mentioned in the [course](https://www.coursera.org/learn/learning-how-to-learn)._

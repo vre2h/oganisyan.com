@@ -2,7 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const SEO = ({ description, lang, meta, title, postImage }) => {
+import defaultSeoImage from '../../content/assets/about-photo.jpg'
+
+const SEO = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,9 +21,7 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
     `,
   )
 
-  const image = postImage
-    ? `${site.siteMetadata.siteUrl}${postImage}`
-    : site.siteMetadata.image
+  const image = defaultSeoImage
 
   const metaDescription = description || site.siteMetadata.description
 

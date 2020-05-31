@@ -2,6 +2,7 @@
 title: The Rule of 20 Links 🔗
 date: "2020-05-23"
 description: "The rule that I've invented to motivate my students not giving up."
+featuredImage: ""
 ---
 
 At the time when I was a CS student, I had a problem with understanding the topics from the first attempt during the lesson. So almost always I needed to work hard after the class to be okay with the material. I spend a lot of nights trying to cope with the topics by reading different articles (in parallel I was blaming myself for not being so smart 🤟).
