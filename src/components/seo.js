@@ -1,10 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import { get } from 'lodash'
 
 import defaultSeoImage from '../../content/assets/about-photo.jpg'
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, meta, title, postImage }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,7 +22,7 @@ const SEO = ({ description, lang, meta, title }) => {
     `,
   )
 
-  const image = defaultSeoImage
+  const image = get(postImage, 'src', defaultSeoImage)
 
   const metaDescription = description || site.siteMetadata.description
 
