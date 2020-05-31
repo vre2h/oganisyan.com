@@ -9,10 +9,18 @@ import Bio from '../components/bio'
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  const postImage =
+    data &&
+    data.file &&
+    data.file.childImageSharp &&
+    data.file.childImageSharp.resize &&
+    data.file.childImageSharp.resize.src
+      ? data.file.childImageSharp.resize.src
+      : null
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="All posts" postImage={postImage} />
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
