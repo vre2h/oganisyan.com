@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
 import { DiscussionEmbed } from 'disqus-react'
 import { get } from 'lodash'
@@ -23,6 +23,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     post,
     'frontmatter.featuredImage.childImageSharp.fluid',
   )
+
+  useEffect(() => {
+    document.querySelector('.gatsby-resp-image-wrapper').style['max-width'] =
+      'initial'
+  }, [])
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,

@@ -7,6 +7,8 @@ featuredImage: "./preview.png"
 
 _Inspired by the Coursera course "Learning How to Learn" by Dr. Terrence Sejnowski and Dr. Barbara Oakley. Note, I’m not a scientist and all information below based on the researches mentioned in the [course](https://www.coursera.org/learn/learning-how-to-learn)._
 
+![preview](./preview.png)
+
 ## Table of contents
 
 - Part 1. [How to cope with procrastination](#part-1-how-to-cope-with-procrastination)
