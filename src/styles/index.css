@@ -26,3 +26,13 @@
   background: rgba(0, 0, 0, 0.2);
   color: #000;
 }
+
+@media screen and (max-width: 390px) {
+  .main-header {
+    flex-direction: column;
+  }
+
+  .main-subscribe {
+    align-self: flex-end;
+  }
+}

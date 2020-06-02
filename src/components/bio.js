@@ -45,6 +45,7 @@ const Bio = () => {
           alignItems: 'center',
           flexDirection: image ? 'row-reverse' : 'row',
           fontSize: 15,
+          width: '100%',
         }}
       >
         <img
@@ -77,7 +78,7 @@ const Bio = () => {
           </a>
         </div>
       </div>
-      <div className="social-wrapper">
+      <div className="social-wrapper" style={{ width: '100%' }}>
         <Social />
       </div>
     </div>

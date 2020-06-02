@@ -26,6 +26,7 @@ const Layout = ({ title, children }) => (
         marginBottom: rhythm(1.5),
         marginTop: rhythm(1 / 3),
       }}
+      className="main-header"
     >
       <h3
         style={{
