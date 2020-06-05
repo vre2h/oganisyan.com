@@ -29,6 +29,7 @@ export default ({ pageUrl, title, style }) => {
           fontSize: `${rhythm(1.3)}`,
           color: '#555',
           overflowX: 'auto',
+          overflowY: 'hidden',
         }}
         className="social"
       >
