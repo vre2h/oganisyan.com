@@ -30,7 +30,7 @@ For now, let's talk about different tools that may help you to keep this flow mo
 
 In this part, I'd like to share applications that helped me to keep focused mode on by taking the "massive attack" of distractions.
 
-ℹ️ Note, you don' t need to use all mentioned applications together, just pick ones that fit for you. However, I highly recommend giving a chance to all of them. After some time you'll start to see their positive influence.
+ℹ️ Note, you don' t need to use all mentioned applications together, just choose the ones that fit for you. However, I highly recommend giving a chance to all of them. After some time you'll start to see their positive influence.
 
 ### Pocket
 
@@ -80,7 +80,7 @@ Haze Over will give you an opportunity to focus on the one tab so your attention
 
 I have dedicated an independent chapter for the "Notifications" to make clear its importance.
 
-From my point of view, the role of notifications is underestimated. They are unnoticeable but very dangerous so I recommend to start following them and you'll understand how often they are distracting from important tasks. My advice is turning them of (in case of messengers, mute almost all chats).
+From my point of view, the role of notifications is underestimated. They are unnoticeable but very dangerous so I recommend to start following them and you'll understand how often they are distracting from important tasks. My advice is turning them off (in case of messengers, mute almost all chats).
 
 🚫 If you have a fear of missing out, I'd recommend to create routine tasks to check notifications every couple of hours in a bunch. You'll be notified about everything without moving attention to the phone every time some shitty advertisers consider you as their target.
 
