@@ -20,6 +20,7 @@ export default () => (
       color: '#555',
       overflowX: 'auto',
       marginTop: '10px',
+      overflowY: 'hidden',
     }}
     className="social"
   >

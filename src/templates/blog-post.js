@@ -25,8 +25,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   )
 
   useEffect(() => {
-    document.querySelector('.gatsby-resp-image-wrapper').style['max-width'] =
-      'initial'
+    const image = document.querySelector('.gatsby-resp-image-wrapper')
+    if (image) {
+      image.style['max-width'] = 'initial'
+    }
   }, [])
 
   const disqusConfig = {
