@@ -53,10 +53,6 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
           content: 'website',
         },
         {
-          property: 'og:url',
-          content: SITE_URL,
-        },
-        {
           property: 'og:image',
           content: imageUrl,
         },
