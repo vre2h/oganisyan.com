@@ -23,7 +23,7 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
   )
 
   const image = get(postImage, 'src', defaultSeoImage)
-  const imageUrl = `http://oganisyan.com/${image}`
+  const imageUrl = `http://oganisyan.com${image}`
 
   const metaDescription = description || site.siteMetadata.description
 
@@ -55,7 +55,14 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
           property: 'og:image',
           content: imageUrl,
         },
-
+        {
+          property: 'og:image:width',
+          content: '600',
+        },
+        {
+          property: 'og:image:height',
+          content: '386',
+        },
         {
           name: 'twitter:card',
           content: 'summary_large_image',
