@@ -23,7 +23,7 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
   )
 
   const image = get(postImage, 'src', defaultSeoImage)
-  const imageUrl = `http://oganisyan.com/' + ${image}`
+  const imageUrl = `http://oganisyan.com/${image}`
 
   const metaDescription = description || site.siteMetadata.description
 
