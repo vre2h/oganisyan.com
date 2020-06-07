@@ -20,9 +20,9 @@ module.exports = {
     description: 'A little bit about me.',
     siteUrl: 'https://oganisyan.com/',
     social: {
-      twitter: 'vre2h',
+      twitter: '@vre2h',
       github: 'vre2h',
-      telegram: 'vre2h',
+      telegram: '@vre2h',
     },
     projects: jobs.data,
     traineeships: traineeships.data,

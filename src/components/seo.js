@@ -23,6 +23,7 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
   )
 
   const image = get(postImage, 'src', defaultSeoImage)
+  const imageUrl = `http://oganisyan.com/' + ${image}`
 
   const metaDescription = description || site.siteMetadata.description
 
@@ -52,7 +53,7 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
         },
         {
           property: 'og:image',
-          content: image,
+          content: imageUrl,
         },
 
         {
@@ -69,7 +70,7 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
         },
         {
           name: 'twitter:image',
-          content: image,
+          content: imageUrl,
         },
         {
           name: 'twitter:description',
@@ -79,6 +80,10 @@ const SEO = ({ description, lang, meta, title, postImage }) => {
     />
   )
 }
+/**
+<meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+
+ */
 
 SEO.defaultProps = {
   lang: 'en',
