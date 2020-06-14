@@ -27,7 +27,7 @@ The one thing some might understand is that the quality of the ability to work m
 
 ### Holy wars about "yet another framework"
 
-The topic that drives me crazy is infinite wars about the next important technology which is going to change the way we <del>live</del> write code. The stories of successful companies show us that stack isn't matter, that different languages, frameworks, and paradigms can create projects that customers love.
+The topic that drives me crazy is infinite wars about the next important technology which is going to change the way we <del>live</del> write code. The stories of successful companies show us that stack doesn't matter, that different languages, frameworks, and paradigms can create projects that customers love.
 
 By holy warring about the next great framework, we're moving important things like customer satisfaction, performance _(still regretting that I used gatsby for blog)_ and security to the background of our attention.
 
