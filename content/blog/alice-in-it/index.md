@@ -39,7 +39,7 @@ In my opinion, the only way to break the chains of burnout is to start doing stu
 
 By differently I mean to stop putting ourselves in the position of a squirrel trapped in a wheel where we are working hard to have abilities and skills to work more without any goals.
 
-By differently I mean to follow examples of the people who built the Wonderland to us and their principles were: inventing, exploring, and building stuff. 
+By differently I mean to follow examples of the people who built the Wonderland for us and their principles were: inventing, exploring, and building stuff.
 
 By differently I mean to get out of the wheel and start to explore and build stuff that might encourage our interest.
 
