@@ -26,9 +26,8 @@ const BlogIndex = ({ data, location }) => {
                 <Link
                   style={{ boxShadow: 'none' }}
                   to={`/blog${node.fields.slug}`}
-                >
-                  {title}
-                </Link>
+                  dangerouslySetInnerHTML={{ __html: title }}
+                />
               </h3>
               <small style={{ color: '#a0a0a0' }}>
                 {node.frontmatter.date}{' '}

@@ -53,9 +53,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginTop: rhythm(1),
               marginBottom: 0,
             }}
-          >
-            {post.frontmatter.title}
-          </h1>
+            dangerouslySetInnerHTML={{ __html: post.frontmatter.title }}
+          />
           <p
             style={{
               display: 'block',
@@ -102,16 +101,24 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={`blog/${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
+              <Link
+                to={`blog/${previous.fields.slug}`}
+                rel="prev"
+                dangerouslySetInnerHTML={{
+                  __html: `← ${previous.frontmatter.title}`,
+                }}
+              />
             )}
           </li>
           <li>
             {next && (
-              <Link to={`blog/${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
+              <Link
+                to={`blog/${next.fields.slug}`}
+                rel="next"
+                dangerouslySetInnerHTML={{
+                  __html: `${next.frontmatter.title} →`,
+                }}
+              />
             )}
           </li>
         </ul>
