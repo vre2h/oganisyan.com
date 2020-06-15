@@ -14,6 +14,8 @@ import useScrollToTop from '../hooks/useScrollToTop'
 import princeJump from '../../content/assets/prince-jump.png'
 import ShareToSocial from '../components/shareToSocial'
 
+const matchHtmlTags = /<(\/?)\w+>/gi
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -39,11 +41,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
   }
 
+  const titleWithoutTags = post.frontmatter.title.replace(matchHtmlTags, '')
+  const desc = post.frontmatter.description || post.excerpt
+  const descWithoutTags = desc.replace(matchHtmlTags, '')
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        title={titleWithoutTags}
+        description={descWithoutTags}
         postImage={featuredImgFluid}
       />
       <article>
