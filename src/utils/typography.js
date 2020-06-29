@@ -25,6 +25,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }) => ({
   'p code': {
     fontSize: rhythm(0.55),
   },
+  h3: {
+    'line-height': 1.4,
+  },
 })
 
 delete Wordpress2016.googleFonts
