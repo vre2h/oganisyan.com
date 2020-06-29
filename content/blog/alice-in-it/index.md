@@ -7,7 +7,7 @@ featuredImage: "./preview.png"
 
 _“My dear, here we must run as fast as we can, just to stay in place. And if you wish to go anywhere you must run twice as fast as that”. (Lewis Carroll)_
 
-![preview](./preview.png)
+![Alice in IT](./preview.png)
 
 In 1865 Lewis Carroll wrote that we need to run _twice as fast as we can_ just to go anywhere in Wonderland. More than 150 years of intensive scientific and technological progress turn the IT industry into the new Wonderland. As a result instead of the paradise on Earth, we got burnouts, crashed work-life balances, and infinite threads of holy wars regarding new programming frameworks and languages. I think that we got into the trap of Wonderland where consuming matters more than creating.
 

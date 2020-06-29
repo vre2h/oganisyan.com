@@ -7,7 +7,7 @@ featuredImage: "./preview.png"
 
 Nowadays, when consuming information is so easy, it's become almost impossible to keep yourself concentrated even an hour without being distracted. Being able to work in a focus mode is the primary goal of every person who wants to be productive and avoid attacks of anxiety.
 
-![preview](./preview.png)
+![The Flow Mode](./preview.png)
 
 ## Table of contents
 

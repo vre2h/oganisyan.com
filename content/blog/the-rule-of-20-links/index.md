@@ -8,7 +8,7 @@ featuredImage: "./preview.png"
 
 At the time when I was a CS student, I had a problem with understanding the topics from the first attempt during the lesson. So almost always I needed to work hard after the class to be okay with the material. I spend a lot of nights trying to cope with the topics by reading different articles (in parallel I was blaming myself for not being so smart 🤟).
 
-![preview](./preview.png)
+![The Rule of 20 Links](./preview.png)
 
 All these difficulties make me realize that I need to explore how the system called the brain learns and interprets materials. After some sleepless nights I get acquired with the ideas of spaced repetition, chunking, and the illusion of competence that I covered in the previous article<sup>[1](#additional-literature-)</sup>.
 

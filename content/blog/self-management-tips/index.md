@@ -7,7 +7,7 @@ featuredImage: "./preview.png"
 
 _Inspired by the Coursera course "Learning How to Learn" by Dr. Terrence Sejnowski and Dr. Barbara Oakley. Note, I’m not a scientist and all information below based on the researches mentioned in the [course](https://www.coursera.org/learn/learning-how-to-learn)._
 
-![preview](./preview.png)
+![Self Management Tips](./preview.png)
 
 ## Table of contents
 
