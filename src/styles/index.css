@@ -7,6 +7,10 @@
 @import './footer.css';
 @import './nav.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-subscribe {
   display: flex;
   justify-content: center;
