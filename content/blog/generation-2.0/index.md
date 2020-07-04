@@ -1,8 +1,7 @@
 ---
 title: About remote work, anxiety, and other issues our generation faces
 date: "2020-06-28"
-description: "In the article, I'd like to share some most important insights of the Deloitte's survey which explores the views of more than 27,500 millennials and Gen Zs and my opinion about them.
-."
+description: "In the article, I'd like to share some most important insights of the Deloitte's survey which explores the views of more than 27,500 millennials and Gen Zs and my opinion about them."
 featuredImage: "./preview.png"
 ---
 
