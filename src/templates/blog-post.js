@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-
 import React, { useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
 import { DiscussionEmbed } from 'disqus-react'
@@ -10,7 +7,6 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
-import useScrollToTop from '../hooks/useScrollToTop'
 import princeJump from '../../content/assets/prince-jump.png'
 import ShareToSocial from '../components/shareToSocial'
 
@@ -20,7 +16,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
-  const [showScrollToTop, scrollToTop] = useScrollToTop()
   const featuredImgFluid = get(
     post,
     'frontmatter.featuredImage.childImageSharp.fluid',
@@ -131,19 +126,19 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       </nav>
       {/* eslint-disable-next-line */}
       <DiscussionEmbed {...disqusConfig} />
-      <img
-        onClick={scrollToTop}
-        src={princeJump}
-        alt="^"
-        style={{
-          position: 'fixed',
-          right: '30px',
-          bottom: 0,
-          display: showScrollToTop ? 'block' : 'none',
-          width: '50px',
-          cursor: 'pointer',
-        }}
-      />
+      <a href="#top">
+        <img
+          src={princeJump}
+          alt="^"
+          style={{
+            position: 'fixed',
+            right: '30px',
+            bottom: 0,
+            width: '50px',
+            cursor: 'pointer',
+          }}
+        />
+      </a>
     </Layout>
   )
 }

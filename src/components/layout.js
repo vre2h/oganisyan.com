@@ -16,6 +16,7 @@ const Layout = ({ title, children }) => (
       maxWidth: rhythm(24),
       padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
     }}
+    id="top"
   >
     <header
       style={{
@@ -84,7 +85,7 @@ const Layout = ({ title, children }) => (
         className="main-subscribe"
       >
         <Telegram width="15" className="icon" />
-        Subscribe
+        Follow me
       </a>
       <Nav />
     </header>
