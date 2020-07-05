@@ -127,17 +127,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       {/* eslint-disable-next-line */}
       <DiscussionEmbed {...disqusConfig} />
       <a href="#top">
-        <img
-          src={princeJump}
-          alt="^"
-          style={{
-            position: 'fixed',
-            right: '30px',
-            bottom: 0,
-            width: '50px',
-            cursor: 'pointer',
-          }}
-        />
+        <img src={princeJump} alt="^" className="jump-to-top" />
       </a>
     </Layout>
   )

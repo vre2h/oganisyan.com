@@ -6,6 +6,7 @@
 @import './about.css';
 @import './footer.css';
 @import './nav.css';
+@import './blog-post.css';
 
 html {
   scroll-behavior: smooth;

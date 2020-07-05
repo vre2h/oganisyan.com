@@ -1,0 +1,13 @@
+.jump-to-top {
+  display: none;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+
+  cursor: pointer;
+}
+
+html:not([data-scroll='0']) .jump-to-top {
+  display: block;
+}
