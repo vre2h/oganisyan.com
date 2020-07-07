@@ -8,8 +8,8 @@ import Flex from '../components/Flex'
 import { rhythm } from '../utils/typography'
 import { Bookmark } from '../components/icons'
 
-const Book = ({ title, author, review }) => {
-  const rating = new Array(Number((review % 3) + 1)).fill(
+const Book = ({ title, author, review, link }) => {
+  const rating = new Array(Number(review)).fill(
     <span
       style={{
         position: 'relative',
@@ -42,9 +42,18 @@ const Book = ({ title, author, review }) => {
               {rating}
             </h4>
           </Flex>
-          <small style={{ fontStyle: 'italic', color: '#a5a5a5' }}>
-            by {author}
-          </small>
+          <Flex flexDirection="column">
+            <small style={{ fontStyle: 'italic', color: '#a5a5a5' }}>
+              by {author}{' '}
+            </small>
+            <small>
+              {link && (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  Find book here
+                </a>
+              )}
+            </small>
+          </Flex>
         </div>
       </div>
     </Flex>
@@ -54,8 +63,14 @@ const Book = ({ title, author, review }) => {
 const BookList = ({ books, title }) => (
   <section>
     <h4>{title}</h4>
-    {books.map(({ title: bookTitle, author, review }) => (
-      <Book title={bookTitle} author={author} review={review} />
+    {books.map(({ title: bookTitle, author, review, link }) => (
+      <Book
+        key={bookTitle}
+        title={bookTitle}
+        author={author}
+        review={review}
+        link={link}
+      />
     ))}
   </section>
 )
@@ -73,7 +88,7 @@ export default ({ data, location }) => {
 
       <main style={{ marginTop: rhythm(1) }}>
         {books.map(({ title, books: yearBooks }) => (
-          <BookList reverse title={title} books={yearBooks} />
+          <BookList title={title} books={yearBooks} />
         ))}
       </main>
     </Layout>
@@ -92,6 +107,7 @@ export const pageQuery = graphql`
             author
             title
             review
+            link
           }
         }
       }

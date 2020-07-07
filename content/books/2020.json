@@ -3,24 +3,20 @@
   "year": "2020",
   "books": [
     {
-      "title": "Jedi Techniques",
-      "author": "Maxim Dorofeev",
+      "title": "Getting Real",
+      "author": "Jason Fried and David Heinemeier Hansson",
+      "link": "https://basecamp.com/gettingreal",
+      "startDate": "24-06-2020",
+      "endDate": "07-07-2020",
       "review": "5"
     },
     {
-      "title": "Composing Software",
-      "author": "Eric Elliott",
-      "review": "3"
-    },
-    {
-      "title": "Grokking algorithms",
-      "author": "Aditya Bhargava",
+      "title": "Makebook",
+      "author": "Pieter Levels",
+      "link": "https://makebook.io/",
+      "startDate": "26-05-2020",
+      "endDate": "04-06-2020",
       "review": "5"
-    },
-    {
-      "title": "Optimization Guide",
-      "author": "Carlos Bueno",
-      "review": "3"
     },
     {
       "title": "The inner game of the tennis",
@@ -41,6 +37,26 @@
       "title": "No more Mr. Nice Guy",
       "author": "Robert A. Glover",
       "review": "5"
+    },
+    {
+      "title": "Jedi Techniques",
+      "author": "Maxim Dorofeev",
+      "review": "5"
+    },
+    {
+      "title": "Composing Software",
+      "author": "Eric Elliott",
+      "review": "3"
+    },
+    {
+      "title": "Grokking algorithms",
+      "author": "Aditya Bhargava",
+      "review": "5"
+    },
+    {
+      "title": "Optimization Guide",
+      "author": "Carlos Bueno",
+      "review": "3"
     }
   ]
 }
