@@ -111,6 +111,11 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    'gatsby-plugin-no-javascript',
+    {
+      resolve: 'gatsby-plugin-no-javascript',
+      options: {
+        excludeFiles: ['blog-post', 'lyrics-post'],
+      },
+    },
   ],
 }

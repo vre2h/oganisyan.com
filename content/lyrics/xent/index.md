@@ -5,40 +5,39 @@ author: "Vardan Sargsyan"
 featuredImage: "./preview.png"
 ---
 
-Aha bacvume or@ ev ir het beröm nor huys <br />
+Aha bacvum e or@ yev ir het berum nor huys <br />
 Vor kgas indz mot u berelov mi shoxi luys <br />
-K zhptas anmex du, zhpitov qo xelahand (?) <br />
-U kases “eka, es arden qonnem havityan” <br />
-Bayc avax amen@ zoq erazer u cnorq (?) <br />
-k mnas srtum im husheri karot <br />
+Kzhptas anmex du zhpitov qo xelahar <br />
+U kases:“eka, es arden qonn em havityan” <br />
+Bayc avax amen@ lok eraz er u cnorq <br />
+Kmnas srtum im — husheri karot <br />
 
 *x(2)*<br />
-xent, xent, xent <br />
-kraki pes xent axchikes <br />
-mek arev u mek lusines <br />
-mek kexciq, mek potorikes <br />
+Xent, xent, xent <br />
+Kraki pes xent axjik es <br />
+Mek arev u mek lusin es <br />
+Mek hezik, mek potorik es <br />
 
-verj@(?) bave ser im, <br />
-chem uzum linel geri es <br />
-durs galov francisco <br />
-k gtnem hrashk mekin es <br />
-xaxeric hognelem, shoq amran@ dzyan patiles <br />
-bayc krkin es zgumem mievnuyne indz sirumes <br />
+Verj, el bave ser im, <br />
+Chem uzum linel geri yes <br />
+Durs galov cancic qo <br />
+Kgtnem hrashq mekin yes <br />
+Xagheric hognelem, shoq amran@ dzyan patil es <br />
+Bayc krkin es zgum em mievnuyn e indz sirum es <br />
 
 *x(2)*<br />
-xent, xent, xent <br />
-kraki pes xent axchikes <br />
-mek arev u mek lusines <br />
-mek kexciq, mek potorikes <br />
+Xent, xent, xent <br />
+Kraki pes xent axjik es <br />
+Mek arev u mek lusin es <br />
+Mek hezik, mek potorik es <br />
 
-Aha bacvume or@ ev ir het beröm nor huys <br />
+Aha bacvum e or@ yev ir het berum nor huys <br />
 Vor kgas indz mot u berelov mi shoxi luys <br />
-Bayc avax amen@ zoq erazer u cnorq (?) <br />
-k mnas srtum im husheri karot <br />
+Bayc avax amen@ lok eraz er u cnorq <br />
+Kmnas srtum im husheri karot <br />
 
 *x(&#8734)* <br />
-xent, xent, xent <br />
-kraki pes xent axchikes <br />
-mek arev u mek lusines <br />
-mek kexciq, mek potorikes <br />
-
+Xent, xent, xent <br />
+Kraki pes xent axjik es <br />
+Mek arev u mek lusin es <br />
+Mek hezik, mek potorik es <br />

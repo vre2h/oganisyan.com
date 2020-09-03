@@ -89,7 +89,7 @@ const LyricsPostTemplate = ({ data, pageContext, location }) => {
           <li>
             {previous && (
               <Link
-                to={`blog/${previous.fields.slug}`}
+                to={`lyrics/${previous.fields.slug}`}
                 rel="prev"
                 dangerouslySetInnerHTML={{
                   __html: `← ${previous.frontmatter.title}`,
@@ -100,7 +100,7 @@ const LyricsPostTemplate = ({ data, pageContext, location }) => {
           <li>
             {next && (
               <Link
-                to={`blog/${next.fields.slug}`}
+                to={`lyrics/${next.fields.slug}`}
                 rel="next"
                 dangerouslySetInnerHTML={{
                   __html: `${next.frontmatter.title} →`,

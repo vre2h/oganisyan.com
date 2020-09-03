@@ -12,7 +12,7 @@ deploy: clean lint format build push
 build:
 	npx gatsby build
 
-format:
+format: 
 	npx prettier --write src/**/*.{js,jsx,json,md}
 
 clean:
