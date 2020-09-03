@@ -112,9 +112,15 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-no-javascript',
+      resolve: 'gatsby-plugin-no-javascript-utils',
       options: {
-        excludeFiles: ['blog-post', 'lyrics-post'],
+        noSourcemaps: true,
+        removeGeneratorTag: true,
+        removeReactHelmetAttrs: false,
+        noInlineStyles: true,
+        removeGatsbyAnnouncer: true,
+        removeFocusWrapper: false,
+        removePreloadLinks: true,
       },
     },
   ],
