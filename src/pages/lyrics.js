@@ -3,16 +3,14 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { rhythm } from '../utils/typography'
 import Bio from '../components/bio'
 
-const BlogIndex = ({ data, location }) => {
+const LyricsIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="All songs" />
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
@@ -26,27 +24,14 @@ const BlogIndex = ({ data, location }) => {
               >
                 <Link
                   style={{ boxShadow: 'none' }}
-                  to={`/blog${node.fields.slug}`}
+                  to={`/lyrics${node.fields.slug}`}
                   dangerouslySetInnerHTML={{ __html: title }}
                 />
               </h3>
               <small style={{ color: '#a0a0a0' }}>
-                {node.frontmatter.date}{' '}
-                <span
-                  style={{ color: 'var(--main-color)', fontSize: rhythm(0.5) }}
-                >
-                  •
-                </span>{' '}
-                {node.timeToRead} min
+                {node.frontmatter.author}{' '}
               </small>
             </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
           </article>
         )
       })}
@@ -54,7 +39,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default LyricsIndex
 
 export const pageQuery = graphql`
   query {
@@ -65,7 +50,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/(blog)/" } }
+      filter: { fileAbsolutePath: { regex: "/(lyrics)/" } }
     ) {
       edges {
         node {
@@ -78,6 +63,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            author
           }
         }
       }

@@ -5,6 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve('./src/templates/blog-post.js')
+  const lyricPost = path.resolve('./src/templates/lyrics-post.js')
   const result = await graphql(
     `
       {
@@ -20,6 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 title
               }
+              fileAbsolutePath
             }
           }
         }
@@ -32,7 +34,12 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges
+  const posts = result.data.allMarkdownRemark.edges.filter(({ node }) =>
+    node.fileAbsolutePath.includes('blog'),
+  )
+  const lyrics = result.data.allMarkdownRemark.edges.filter(({ node }) =>
+    node.fileAbsolutePath.includes('lyrics'),
+  )
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -40,6 +47,20 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `blog${post.node.fields.slug}`,
       component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next,
+      },
+    })
+  })
+
+  lyrics.forEach((post, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+    const next = index === 0 ? null : posts[index - 1].node
+    createPage({
+      path: `lyrics${post.node.fields.slug}`,
+      component: lyricPost,
       context: {
         slug: post.node.fields.slug,
         previous,
