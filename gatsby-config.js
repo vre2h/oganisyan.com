@@ -111,17 +111,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    {
-      resolve: 'gatsby-plugin-no-javascript-utils',
-      options: {
-        noSourcemaps: true,
-        removeGeneratorTag: true,
-        removeReactHelmetAttrs: false,
-        noInlineStyles: true,
-        removeGatsbyAnnouncer: true,
-        removeFocusWrapper: false,
-        removePreloadLinks: true,
-      },
-    },
+    'gatsby-plugin-no-javascript',
   ],
 }
